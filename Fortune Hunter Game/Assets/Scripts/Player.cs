@@ -41,10 +41,17 @@ public class Player : MonoBehaviour
             if (!isJumping){
                 
                 rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
+                doubleJump = true;
 
             }else{
                 
-            }
+                if (doubleJump)
+                {
+                    rig.AddForce(new Vector2(0f, JumpForce * 1.2f), ForceMode2D.Impulse);
+                    doubleJump = false;
+                }
+
+            }  
             
 
         }
