@@ -37,10 +37,15 @@ public class Player : MonoBehaviour
 
     void Jump(){
 
-        if (Input.GetButtonDown("Jump") && !isJumping)
-        {
+        if (Input.GetButtonDown("Jump")){
+            if (!isJumping){
+                
+                rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
+
+            }else{
+                
+            }
             
-            rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
 
         }
 
@@ -48,7 +53,7 @@ public class Player : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision) {
         
-        if (collision.gameObject.layer == 8)
+        if (collision.gameObject.layer == 6)
         {
 
             isJumping = false;
@@ -59,7 +64,7 @@ public class Player : MonoBehaviour
 
         void OnCollisionExit2D(Collision2D collision) {
         
-        if (collision.gameObject.layer == 8)
+        if (collision.gameObject.layer == 6)
         {
 
             isJumping = true;
