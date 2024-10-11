@@ -7622,7 +7622,7 @@ GameObject:
   - component: {fileID: 347796442}
   - component: {fileID: 347796441}
   m_Layer: 5
-  m_Name: Image
+  m_Name: apple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9338,7 +9338,7 @@ GameObject:
   - component: {fileID: 769910512}
   - component: {fileID: 769910511}
   m_Layer: 5
-  m_Name: text
+  m_Name: score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10143,6 +10143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalScore: 0
+  scoreText: {fileID: 0}
 --- !u!4 &1795075603
 Transform:
   m_ObjectHideFlags: 0
