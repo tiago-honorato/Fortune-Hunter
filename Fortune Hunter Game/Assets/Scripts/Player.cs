@@ -85,6 +85,12 @@ public class Player : MonoBehaviour
             
         }
 
+        if (collision.gameObject.tag == "Spike")
+        {
+            GameController.instance.ShowGameOver();
+            Destroy(gameObject);
+        }
+
     }
 
         void OnCollisionExit2D(Collision2D collision) {
@@ -99,4 +105,3 @@ public class Player : MonoBehaviour
     }
 
 }
-
