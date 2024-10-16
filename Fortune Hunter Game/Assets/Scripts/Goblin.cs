@@ -54,7 +54,7 @@ public class Goblin : MonoBehaviour
             {
                 col.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 5);
                 //anim.SetTrigger("die");
-                Destroy(gameObject, 1f);
+                Destroy(gameObject, 0.2f);
             }
 
         }
