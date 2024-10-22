@@ -18,13 +18,16 @@ public class Goblin : MonoBehaviour
 
     public LayerMask layer;
 
+    public BoxCollider2D boxCollider2D;
+    public CircleCollider2D circleCollider2D;
+
     public float speed;
     // Start is called before the first frame update
     void Start()
     {
 
         rig = GetComponent<Rigidbody2D>();
-        //anim.GetComponent<Animator>();
+        anim = GetComponent<Animator>();
 
     }
 
@@ -52,9 +55,13 @@ public class Goblin : MonoBehaviour
 
             if (height > 0)
             {
-                col.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 5);
-                //anim.SetTrigger("die");
-                Destroy(gameObject, 0.2f);
+                col.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 10, ForceMode2D.Impulse);
+                speed = 0;
+                anim.SetTrigger("die");
+                boxCollider2D.enabled = false;
+                circleCollider2D.enabled = false;
+                rig.bodyType = RigidbodyType2D.Kinematic;
+                Destroy(gameObject, 0.33f);
             }
 
         }
