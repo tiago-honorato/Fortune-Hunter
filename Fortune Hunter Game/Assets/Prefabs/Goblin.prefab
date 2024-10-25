@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 3161405232081704962}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.6, y: 0, z: 0}
+  m_LocalPosition: {x: 0.721, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -56,7 +56,7 @@ Transform:
   m_GameObject: {fileID: 3694028556760893840}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.06, y: 0.3, z: 0}
+  m_LocalPosition: {x: -0.042, y: 0.132, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -87,7 +87,7 @@ Transform:
   m_GameObject: {fileID: 3746382450958980616}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.6, y: -0.48, z: 0}
+  m_LocalPosition: {x: 0.721, y: -0.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 5740253664072995471}
   - component: {fileID: 5645773104567272221}
   - component: {fileID: 6399757945449693326}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Goblin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,7 +238,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.03921318, y: 0.106011674}
+  m_Offset: {x: -0.0302293, y: 0.12610886}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -249,7 +249,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0462849, y: 0.4197245}
+  m_Size: {x: 1.1723292, y: 0.48812574}
   m_EdgeRadius: 0
 --- !u!50 &5740253664072995471
 Rigidbody2D:
@@ -295,7 +295,9 @@ MonoBehaviour:
   headPoint: {fileID: 7736611686333811508}
   layer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 320
+  boxCollider2D: {fileID: 546022957706929665}
+  circleCollider2D: {fileID: 6399757945449693326}
   speed: 3
 --- !u!58 &6399757945449693326
 CircleCollider2D:
@@ -329,6 +331,6 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.04, y: -0.5}
+  m_Offset: {x: 0.01, y: -0.28}
   serializedVersion: 2
-  m_Radius: 0.3
+  m_Radius: 0.5
