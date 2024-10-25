@@ -10880,6 +10880,16 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1527660776}
   m_CullTransparentMesh: 1
+--- !u!58 &1619361117 stripped
+CircleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 6399757945449693326, guid: 5e7ca3cca2227284e8cd215cbb25fcfd, type: 3}
+  m_PrefabInstance: {fileID: 5741318180586006307}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1619361120 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 546022957706929665, guid: 5e7ca3cca2227284e8cd215cbb25fcfd, type: 3}
+  m_PrefabInstance: {fileID: 5741318180586006307}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1716995083
 GameObject:
   m_ObjectHideFlags: 0
@@ -11451,6 +11461,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5645773104567272221, guid: 5e7ca3cca2227284e8cd215cbb25fcfd, type: 3}
+      propertyPath: boxCollider2D
+      value: 
+      objectReference: {fileID: 1619361120}
+    - target: {fileID: 5645773104567272221, guid: 5e7ca3cca2227284e8cd215cbb25fcfd, type: 3}
+      propertyPath: circleCollider2D
+      value: 
+      objectReference: {fileID: 1619361117}
     - target: {fileID: 7407631996532513600, guid: 5e7ca3cca2227284e8cd215cbb25fcfd, type: 3}
       propertyPath: m_Name
       value: Goblin
