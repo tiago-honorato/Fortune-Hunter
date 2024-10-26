@@ -17,7 +17,6 @@ public class GameController : MonoBehaviour
     {
         instance = this;
     }
-
     public void UpdateScoreText(){
 
         scoreText.text = totalScore.ToString();
