@@ -6,7 +6,6 @@ public class Player : MonoBehaviour
     public float Speed;
     public float JumpForce;
     public bool isJumping;
-    public bool doubleJump;
     private Rigidbody2D rig;
     private Animator anim;
 
@@ -14,10 +13,8 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-
     }
 
     // Update is called once per frame
@@ -57,20 +54,9 @@ public class Player : MonoBehaviour
             if (!isJumping){
                 
                 rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
-                doubleJump = true;
                 anim.SetBool("jump", true);
 
-            }else{
-                
-                if (doubleJump)
-                {
-                    rig.AddForce(new Vector2(0f, JumpForce * 0.8f), ForceMode2D.Impulse);
-                    doubleJump = false;
-                }
-
-            }  
-            
-
+            } 
         }
 
     }
