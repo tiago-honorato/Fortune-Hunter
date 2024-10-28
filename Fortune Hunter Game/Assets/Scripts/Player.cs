@@ -50,12 +50,12 @@ public class Player : MonoBehaviour
 
     void Jump(){
 
-        if (Input.GetKeyDown(KeyCode.W)){
+        if (Input.GetKey(KeyCode.W)){
             if (!isJumping){
                 
                 rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
                 anim.SetBool("jump", true);
-
+                isJumping = true;
             } 
         }
 
