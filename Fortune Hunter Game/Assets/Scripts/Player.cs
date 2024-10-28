@@ -53,6 +53,8 @@ public class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.W)){
             if (!isJumping){
                 
+                rig.velocity = new Vector2(rig.velocity.x, 0f);
+
                 rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
                 anim.SetBool("jump", true);
                 isJumping = true;
