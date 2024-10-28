@@ -35,4 +35,10 @@ public class GameController : MonoBehaviour
 
     }
 
+    public void GameQuit(){
+
+        Application.Quit();
+
+    }
+
 }
