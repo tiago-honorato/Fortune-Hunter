@@ -73,13 +73,15 @@ public class Player : MonoBehaviour
 
         if (collision.gameObject.tag == "Spike")
         {
+            anim.SetTrigger("die");
             GameController.instance.ShowGameOver();
-            Destroy(gameObject);
+            Destroy(gameObject, 0.3f);
         }
         if (collision.gameObject.tag == "Saw")
         {
+            anim.SetTrigger("die");
             GameController.instance.ShowGameOver();
-            Destroy(gameObject);
+            Destroy(gameObject, 0.3f);
         }
 
     }

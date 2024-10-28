@@ -8,7 +8,7 @@ public class Goblin : MonoBehaviour
 
     private Rigidbody2D rig;
     private Animator anim;
-
+    public Animator PlayerAnim;
     public Transform rightCol;
     public Transform leftCol;
 
@@ -67,8 +67,8 @@ public class Goblin : MonoBehaviour
 
                 playerDestroyed = true;
                 GameController.instance.ShowGameOver();
-                Destroy(col.gameObject);
-
+                PlayerAnim.SetTrigger("die");
+                Destroy(col.gameObject, 0.3f);
             }
 
         }

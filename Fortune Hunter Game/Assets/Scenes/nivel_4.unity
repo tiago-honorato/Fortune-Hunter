@@ -7833,6 +7833,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5645773104567272221, guid: 5e7ca3cca2227284e8cd215cbb25fcfd, type: 3}
+      propertyPath: PlayerAnim
+      value: 
+      objectReference: {fileID: 1778167687}
     - target: {fileID: 7407631996532513600, guid: 5e7ca3cca2227284e8cd215cbb25fcfd, type: 3}
       propertyPath: m_Name
       value: Goblin (1)
@@ -16145,6 +16149,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1718932479}
   m_CullTransparentMesh: 1
+--- !u!95 &1778167687 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1302459506581212660, guid: 234eef2b618cd3d4ab5cb61421a78ce3, type: 3}
+  m_PrefabInstance: {fileID: 413608147}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1795075601
 GameObject:
   m_ObjectHideFlags: 0
@@ -17132,6 +17141,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5645773104567272221, guid: 5e7ca3cca2227284e8cd215cbb25fcfd, type: 3}
+      propertyPath: PlayerAnim
+      value: 
+      objectReference: {fileID: 1778167687}
     - target: {fileID: 7407631996532513600, guid: 5e7ca3cca2227284e8cd215cbb25fcfd, type: 3}
       propertyPath: m_Name
       value: Goblin
