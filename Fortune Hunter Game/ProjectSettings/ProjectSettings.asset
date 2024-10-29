@@ -14,7 +14,7 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: 3 FRIENDS CORP.
   productName: Fortune Hunter Game
-  defaultCursor: {fileID: 0}
+  defaultCursor: {fileID: 2800000, guid: 16881a3515b3e004eaad481536b5d537, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.1137255, g: 0.1254902, b: 0.12941177, a: 1}
   m_ShowUnitySplashScreen: 1
