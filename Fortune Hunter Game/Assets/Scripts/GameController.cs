@@ -3,23 +3,43 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.Tilemaps;
 
 public class GameController : MonoBehaviour
 {
 
     public int totalScore;
+    public int totalLevelGems;
     public TextMeshProUGUI scoreText;
     public static GameController instance;
     public GameObject gameOver;
+    public TilemapCollider2D tileCollider;
+    public TilemapRenderer tileRender;
+    public ParticleSystem exitParticle;
+
+    private bool blockerOpened = false;
 
     // Start is called before the first frame update
     void Start()
     {
         instance = this;
     }
+
+    private void OpenBlocker(){
+
+        if (totalScore == totalLevelGems && !blockerOpened)
+        {
+            tileCollider.enabled = false;
+            tileRender.enabled = false;
+            exitParticle.Play();
+        }
+
+    }
+
     public void UpdateScoreText(){
 
         scoreText.text = totalScore.ToString();
+        OpenBlocker();
 
     }
 
