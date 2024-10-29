@@ -290,15 +290,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aa9c117de853c04c9ba70b5a022d5d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerAnim: {fileID: 0}
   rightCol: {fileID: 6145530935874904772}
   leftCol: {fileID: 8179165609594228351}
   headPoint: {fileID: 7736611686333811508}
   layer:
     serializedVersion: 2
-    m_Bits: 320
+    m_Bits: 321
   boxCollider2D: {fileID: 546022957706929665}
   circleCollider2D: {fileID: 6399757945449693326}
-  speed: 3
+  speed: 5
 --- !u!58 &6399757945449693326
 CircleCollider2D:
   m_ObjectHideFlags: 0
