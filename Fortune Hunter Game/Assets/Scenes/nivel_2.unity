@@ -21178,7 +21178,7 @@ GameObject:
   - component: {fileID: 1978370016}
   - component: {fileID: 1978370015}
   m_Layer: 7
-  m_Name: GameOver
+  m_Name: Platform Destroyer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
