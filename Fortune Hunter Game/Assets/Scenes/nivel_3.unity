@@ -16419,6 +16419,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8725687151121373724, guid: e68ab2bf37fcd2543a217c413f9ecc4a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8737727490924004800, guid: e68ab2bf37fcd2543a217c413f9ecc4a, type: 3}
       propertyPath: m_Name
       value: Next Level
@@ -22107,8 +22111,8 @@ SceneRoots:
   - {fileID: 1163313469}
   - {fileID: 57189923}
   - {fileID: 1745481827}
+  - {fileID: 881310934}
   - {fileID: 723955390}
   - {fileID: 3302386260268763148}
   - {fileID: 1466356882}
   - {fileID: 745832071}
-  - {fileID: 881310934}
