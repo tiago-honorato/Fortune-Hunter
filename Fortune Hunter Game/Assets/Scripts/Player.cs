@@ -3,9 +3,9 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 
-    public float Speed;
-    public float JumpForce;
-    public bool isJumping;
+    public float Speed;// Velocidade do jogador.
+    public float JumpForce;// Força do pulo do jogador.
+    public bool isJumping; // Está pulando ou não.
     private Rigidbody2D rig;
     private Animator anim;
 
@@ -13,43 +13,49 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rig = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
+        rig = GetComponent<Rigidbody2D>();// Obtém o componente rigidbody do jogador.
+        anim = GetComponent<Animator>();// Obtém o componente Animator do jogador.
     }
 
     // Update is called once per frame
     void Update()
     {
         
-        Move();
-        Jump();
+        Move();// Chama o método move a cada tick.
+        Jump();// Chama o método jump a cada tick.
     }
 
+    // Método para mover o player.
     void Move(){
 
-        float movement = Input.GetAxis("Horizontal");
+        float movement = Input.GetAxis("Horizontal");// Obtém a entrada horizontal, -1 pra esquerda, 1 para a direita e 0 parado.
 
-        rig.velocity = new Vector2(movement * Speed, rig.velocity.y);
+        rig.velocity = new Vector2(movement * Speed, rig.velocity.y);// Adiciona o movimento multiplicado pela velocidade e manter o eixo y. 
 
+        // Se o player tiver se movimentando para a direita(movement = 1).
         if (movement > 0f)
         {
-            anim.SetBool("walk", true);
-            transform.eulerAngles = new Vector3(0f, 0f , 0f);
+            anim.SetBool("walk", true);// Habilita a animação walk.
+            transform.eulerAngles = new Vector3(0f, 0f , 0f);// Gira o player para direita se estiver girado em 180 graus.
         }
+        // Se o player tiver se movimentando para a esquerda(movement = -1).
         if (movement < 0f)
         {
-            anim.SetBool("walk", true);
-            transform.eulerAngles = new Vector3(0f, 180f , 0f);
+            anim.SetBool("walk", true);// Habilita a animação walk.
+            transform.eulerAngles = new Vector3(0f, 180f , 0f);// Gira o player em 180 graus.
         }
+        // Se o player timer parado(movement = 0).
         if (movement == 0f)
         {
-            anim.SetBool("walk", false);
+            anim.SetBool("walk", false);// Desabilita a animação walk.
         }
 
     }
 
+    // Método para o player pular.
     void Jump(){
-        
+
+        // Verifica se a tecla "W" esta pressionada
         if (Input.GetKey(KeyCode.W)){
             if (!isJumping){
                 
