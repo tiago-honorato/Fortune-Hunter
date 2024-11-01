@@ -6,7 +6,9 @@ public class AudioController : MonoBehaviour
 {
     public AudioSource audioSourceMusicaFundo;
     public AudioClip[] backgroundSongs;
+    private bool isPlaying = true;
     private static AudioController instance;
+
 
     void Awake()
     {
@@ -25,12 +27,26 @@ public class AudioController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Configura e inicia a reprodução da música de fundo
+        
         if (backgroundSongs.Length > 0)
         {
             AudioClip musicaFundoFase = backgroundSongs[0];
             audioSourceMusicaFundo.clip = musicaFundoFase;
             audioSourceMusicaFundo.Play();
+        }
+    }
+
+        public void ToggleMusic()
+    {
+        if (isPlaying)
+        {
+            audioSourceMusicaFundo.Pause();
+            isPlaying = false;
+        }
+        else
+        {
+            audioSourceMusicaFundo.Play();
+            isPlaying = true;
         }
     }
 }

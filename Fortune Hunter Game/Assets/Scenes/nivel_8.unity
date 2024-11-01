@@ -14832,7 +14832,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 8ea0694ab1ae21542bb23171183ed33f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.83396226, g: 0.83396226, b: 0.83396226, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -33119,7 +33119,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b2fcc90a89d92614ba10dd10388f6f78, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6603774, g: 0.6603774, b: 0.6603774, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -39165,6 +39165,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 619394802}
+  - {fileID: 1532235225}
   - {fileID: 1716995085}
   - {fileID: 904473488}
   - {fileID: 1795075603}
@@ -39174,7 +39175,6 @@ SceneRoots:
   - {fileID: 1166069534}
   - {fileID: 732291916}
   - {fileID: 1707454230}
-  - {fileID: 1532235225}
   - {fileID: 254271527}
   - {fileID: 1939481142}
   - {fileID: 267581895}
