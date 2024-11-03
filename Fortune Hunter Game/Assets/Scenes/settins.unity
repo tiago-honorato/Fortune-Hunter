@@ -8281,7 +8281,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6369429256201480476, guid: a64def8561cf7da48a6d408088cc9ec4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.6
+      value: -2.03
       objectReference: {fileID: 0}
     - target: {fileID: 6369429256201480476, guid: a64def8561cf7da48a6d408088cc9ec4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8579,7 +8579,7 @@ GameObject:
   - component: {fileID: 1437835778}
   - component: {fileID: 1437835777}
   m_Layer: 5
-  m_Name: LevelTxt
+  m_Name: ConfigsTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8624,10 +8624,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Configura\xE7\xF5es"
+  m_text: Settings
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4e0d7cbed5bd0934c9de0a1c7d6dc0bd, type: 2}
+  m_sharedMaterial: {fileID: 6009505056472890260, guid: 4e0d7cbed5bd0934c9de0a1c7d6dc0bd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9636,7 +9636,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6369429256201480476, guid: a64def8561cf7da48a6d408088cc9ec4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.92
+      value: -5.4
       objectReference: {fileID: 0}
     - target: {fileID: 6369429256201480476, guid: a64def8561cf7da48a6d408088cc9ec4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9819,7 +9819,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6369429256201480476, guid: a64def8561cf7da48a6d408088cc9ec4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.114
+      value: 1.48
       objectReference: {fileID: 0}
     - target: {fileID: 6369429256201480476, guid: a64def8561cf7da48a6d408088cc9ec4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9990,7 +9990,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6369429256201480476, guid: a64def8561cf7da48a6d408088cc9ec4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.17
+      value: -4.43
       objectReference: {fileID: 0}
     - target: {fileID: 6369429256201480476, guid: a64def8561cf7da48a6d408088cc9ec4, type: 3}
       propertyPath: m_LocalPosition.y

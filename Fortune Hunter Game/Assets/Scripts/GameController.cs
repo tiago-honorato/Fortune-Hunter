@@ -52,6 +52,13 @@ public class GameController : MonoBehaviour
 
     }
 
+    public void GotoMenuButton(){
+
+        ScoreManager.instance.totalScore = 0;
+        SceneManager.LoadScene("mainMenu");
+
+    }
+
     public void RestartGame(string lvlName){
 
         SceneManager.LoadScene(lvlName);

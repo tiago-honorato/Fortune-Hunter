@@ -56,7 +56,7 @@ public class Player : MonoBehaviour
     void Jump(){
 
         // Verifica se a tecla "W" esta pressionada
-        if (Input.GetKey(KeyCode.W)){
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Space)){
             if (!isJumping){
                 
                 //Zera velocidade vertical para evitar força acumulada
