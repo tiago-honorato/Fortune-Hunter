@@ -21226,13 +21226,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1161060002}
-  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 57189923}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -490, y: 260}
@@ -21314,7 +21314,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1e1f28ff527688848928f8785250918d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 07ddc326f9eb9664dbc5daf2db35303b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -38710,6 +38710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e42da94e7ac7fae4f8efa9afed928584, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onMenu: 0
   totalScore: 0
   totalLevelGems: 6
   scoreText: {fileID: 951391689}
@@ -38813,11 +38814,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1905027852566537102, guid: 234eef2b618cd3d4ab5cb61421a78ce3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.06
+      value: -8.521
       objectReference: {fileID: 0}
     - target: {fileID: 1905027852566537102, guid: 234eef2b618cd3d4ab5cb61421a78ce3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.63
+      value: 3.487
       objectReference: {fileID: 0}
     - target: {fileID: 1905027852566537102, guid: 234eef2b618cd3d4ab5cb61421a78ce3, type: 3}
       propertyPath: m_LocalPosition.z

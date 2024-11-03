@@ -8,6 +8,7 @@ using UnityEngine.Tilemaps;
 public class GameController : MonoBehaviour
 {
 
+    public bool onMenu = false;
     public int totalScore;
     public int totalLevelGems;
     public TextMeshProUGUI scoreText;
@@ -23,12 +24,13 @@ public class GameController : MonoBehaviour
     void Start()
     {
         instance = this;
-        UpdateScoreText();
+
+        if (!onMenu) UpdateScoreText();
     }
 
     private void OpenBlocker(){
 
-        if (totalScore == totalLevelGems && !blockerOpened)
+        if (totalScore == totalLevelGems && !blockerOpened && !onMenu)
         {
             tileCollider.enabled = false;
             tileRender.enabled = false;

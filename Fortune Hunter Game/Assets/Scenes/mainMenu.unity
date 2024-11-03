@@ -11306,6 +11306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e42da94e7ac7fae4f8efa9afed928584, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onMenu: 1
   totalScore: 0
   totalLevelGems: 0
   scoreText: {fileID: 0}
