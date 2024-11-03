@@ -1,3 +1,5 @@
 *.unity binary
 *.meta text eol=lf
 *.cs text eol=lf
+*.sh text eol=lf
+*.txt text eol=crlf
