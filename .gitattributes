@@ -1,2 +1,3 @@
 *.unity binary
 *.meta text eol=lf
+*.cs text eol=lf

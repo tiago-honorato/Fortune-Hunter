@@ -10,7 +10,9 @@ public class NextLevelPoint : MonoBehaviour
 
         if (collision.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene(lvlName);   
+            ScoreManager.instance.totalScore += GameController.instance.totalScore;
+            SceneManager.LoadScene(lvlName);
+            
         }
 
     }

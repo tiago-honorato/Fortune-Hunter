@@ -23,6 +23,7 @@ public class GameController : MonoBehaviour
     void Start()
     {
         instance = this;
+        UpdateScoreText();
     }
 
     private void OpenBlocker(){
@@ -38,9 +39,9 @@ public class GameController : MonoBehaviour
 
     public void UpdateScoreText(){
 
-        scoreText.text = totalScore.ToString();
-        OpenBlocker();
+        scoreText.text = (totalScore + ScoreManager.instance.totalScore).ToString();
 
+        OpenBlocker();
     }
 
     public void ShowGameOver(){
