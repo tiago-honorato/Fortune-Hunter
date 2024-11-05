@@ -5,6 +5,8 @@ public class ScoreManager : MonoBehaviour
     public static ScoreManager instance; // Singleton para acesso global
     public int totalScore;
 
+    public int life = 5;
+
     private void Awake()
     {
         if (instance == null)
@@ -25,27 +27,3 @@ public class ScoreManager : MonoBehaviour
     }
 
 }
-
-/*
-GameController:
-atualiza o txt do score(método)
-
-Diamond:
-adicionar Score ao totalScore na instancia ScoreManager
-
-Chama instancia do GameController pra atualizar o txt
-
-ScoreManager
-
-Tem o totalScore e é DontDestroyOnLoad
-
-
-:::::::DEPOIS::::::::
-
-totalScore do gameController usar como LOCAL.
-totalScore do ScoreManager usar como NUVEM.
-
-A cada inicio de cena GameController pega totalScore de NUVEM.
-
-
-*/

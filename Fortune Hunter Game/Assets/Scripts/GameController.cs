@@ -12,6 +12,9 @@ public class GameController : MonoBehaviour
     public int totalScore;
     public int totalLevelGems;
     public TextMeshProUGUI scoreText;
+
+    public TextMeshProUGUI lifeText;
+
     public static GameController instance;
     public GameObject gameOver;
     public TilemapCollider2D tileCollider;
@@ -25,7 +28,12 @@ public class GameController : MonoBehaviour
     {
         instance = this;
 
-        if (!onMenu) UpdateScoreText();
+        if (!onMenu){
+            UpdateScoreText();
+            UpdateLifeText();
+        } 
+        
+
     }
 
     private void OpenBlocker(){
@@ -46,8 +54,13 @@ public class GameController : MonoBehaviour
         OpenBlocker();
     }
 
+    public void UpdateLifeText(){
+        lifeText.text = ScoreManager.instance.life.ToString();
+    }
+
     public void ShowGameOver(){
 
+        UpdateLifeText();
         gameOver.SetActive(true);
 
     }
@@ -59,9 +72,24 @@ public class GameController : MonoBehaviour
 
     }
 
+    public void SelectScene(string sceneName){
+
+        SceneManager.LoadScene(sceneName);
+
+    }
+
     public void RestartGame(string lvlName){
 
-        SceneManager.LoadScene(lvlName);
+        ScoreManager.instance.life--;
+
+        if (ScoreManager.instance.life <= 0)
+        {
+            SceneManager.LoadScene("mainMenu");
+            ScoreManager.instance.life = 5;
+        }else
+        {
+            SceneManager.LoadScene(lvlName);   
+        }
 
     }
 

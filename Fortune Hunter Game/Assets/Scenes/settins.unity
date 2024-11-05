@@ -8791,7 +8791,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1795075602}
         m_TargetAssemblyTypeName: GameController, Assembly-CSharp
-        m_MethodName: RestartGame
+        m_MethodName: SelectScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10172,6 +10172,7 @@ MonoBehaviour:
   totalScore: 0
   totalLevelGems: 0
   scoreText: {fileID: 0}
+  lifeText: {fileID: 0}
   gameOver: {fileID: 0}
   tileCollider: {fileID: 0}
   tileRender: {fileID: 0}

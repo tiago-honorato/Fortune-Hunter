@@ -68,6 +68,7 @@ public class Goblin : MonoBehaviour
                 playerDestroyed = true;
                 GameController.instance.ShowGameOver();
                 PlayerAnim.SetTrigger("die");
+                anim.SetTrigger("idle");
                 speed = 0;
                 Destroy(col.gameObject, 0.3f);
             }
