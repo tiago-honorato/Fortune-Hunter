@@ -58,6 +58,9 @@ public class Goblin : MonoBehaviour
             {
                 col.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 10, ForceMode2D.Impulse);
                 speed = 0;
+
+                AudioController.instance.PlayEnemyDeathSoundEffect();
+
                 anim.SetTrigger("die");
                 boxCollider2D.enabled = false;
                 circleCollider2D.enabled = false;

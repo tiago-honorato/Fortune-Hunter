@@ -21,6 +21,7 @@ public class Trampoline : MonoBehaviour
         {
             anim.SetTrigger("jump");
             coll.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+            AudioController.instance.PlayTrampolineSoundEffect();
         }
 
     }

@@ -8,7 +8,7 @@ public class AudioController : MonoBehaviour
     public AudioSource audioSourceSoundEffects;
     public AudioClip[] backgroundSongs;
     public AudioClip[] SoundEffects;
-    private bool isPlaying = true;
+    public bool isPlaying = true;
     public static AudioController instance;
 
 
@@ -65,9 +65,22 @@ public class AudioController : MonoBehaviour
 
     }
 
+    public void PlayTrampolineSoundEffect(){
+
+        AudioClip trampolineSound = SoundEffects[4];
+        audioSourceSoundEffects.PlayOneShot(trampolineSound);
+
+    }
+
+        public void PlayEnemyDeathSoundEffect(){
+
+        AudioClip EnemyDeathSound = SoundEffects[5];
+        audioSourceSoundEffects.PlayOneShot(EnemyDeathSound);
+
+    }
+
         public void ToggleMusic()
     {
-        PlayClickSoundEffect();
         if (isPlaying)
         {
             audioSourceMusicaFundo.Pause();
