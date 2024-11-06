@@ -9,22 +9,12 @@ public class Player : MonoBehaviour
     private Rigidbody2D rig;
     private Animator anim;
 
-
-
-    // Variável para o som de pulo
-    public AudioSource audioSourcePulo;
-    public AudioClip jumpSound;
-
     // Start is called before the first frame update
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();// Obtém o componente rigidbody do jogador.
         anim = GetComponent<Animator>();// Obtém o componente Animator do jogador.
 
-        if (audioSourcePulo == null)
-        {
-            audioSourcePulo = gameObject.AddComponent<AudioSource>();
-        }
     }
 
     // Update is called once per frame
@@ -78,8 +68,9 @@ public class Player : MonoBehaviour
                 anim.SetBool("jump", true);
                 isJumping = true;
 
-                // Toca o som do pulo.
-                audioSourcePulo.PlayOneShot(jumpSound);
+            // Chama o som de pulo a partir do AudioController
+            AudioController.instance.PlayjumpSoundEffect();
+            
             } 
         }
 

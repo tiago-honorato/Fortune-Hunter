@@ -5,9 +5,11 @@ using UnityEngine;
 public class AudioController : MonoBehaviour
 {
     public AudioSource audioSourceMusicaFundo;
+    public AudioSource audioSourceSoundEffects;
     public AudioClip[] backgroundSongs;
+    public AudioClip[] SoundEffects;
     private bool isPlaying = true;
-    private static AudioController instance;
+    public static AudioController instance;
 
 
     void Awake()
@@ -35,6 +37,14 @@ public class AudioController : MonoBehaviour
             audioSourceMusicaFundo.Play();
         }
     }
+
+    public void PlayjumpSoundEffect(){
+
+        AudioClip jumpSound = SoundEffects[0];
+        audioSourceSoundEffects.PlayOneShot(jumpSound);
+
+    }
+
         public void ToggleMusic()
     {
         if (isPlaying)

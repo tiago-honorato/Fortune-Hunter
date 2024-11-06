@@ -249,8 +249,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSourceMusicaFundo: {fileID: 14644861}
+  audioSourceSoundEffects: {fileID: 14644861}
   backgroundSongs:
   - {fileID: 8300000, guid: 71b7fc6212e1edb4d8f10db86a5411d7, type: 3}
+  SoundEffects:
+  - {fileID: 8300000, guid: e8cc5309d8d2ff64abcea789a0f3b741, type: 3}
 --- !u!4 &14644863
 Transform:
   m_ObjectHideFlags: 0
