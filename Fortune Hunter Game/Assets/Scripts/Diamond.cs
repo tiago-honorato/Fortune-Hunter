@@ -29,6 +29,8 @@ public class Diamond : MonoBehaviour
             circle.enabled = false;
             collected.SetActive(true);
 
+            AudioController.instance.PlayCollectGemSoundEffect();
+
             GameController.instance.totalScore += Score;
             GameController.instance.UpdateScoreText();
 

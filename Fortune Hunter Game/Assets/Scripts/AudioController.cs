@@ -44,6 +44,12 @@ public class AudioController : MonoBehaviour
         audioSourceSoundEffects.PlayOneShot(jumpSound);
 
     }
+    public void PlayCollectGemSoundEffect(){
+
+        AudioClip collectGemSound = SoundEffects[1];
+        audioSourceSoundEffects.PlayOneShot(collectGemSound);
+
+    }
 
         public void ToggleMusic()
     {
