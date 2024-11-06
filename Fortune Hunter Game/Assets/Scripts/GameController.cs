@@ -74,6 +74,10 @@ public class GameController : MonoBehaviour
 
     public void SelectScene(string sceneName){
 
+        if (ScoreManager.instance != null)
+        {
+            ScoreManager.instance.totalScore = 0;
+        }
         SceneManager.LoadScene(sceneName);
 
     }

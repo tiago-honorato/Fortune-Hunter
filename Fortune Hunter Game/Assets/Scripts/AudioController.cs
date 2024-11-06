@@ -27,7 +27,7 @@ public class AudioController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
         if (backgroundSongs.Length > 0)
         {
             AudioClip musicaFundoFase = backgroundSongs[0];
@@ -35,7 +35,6 @@ public class AudioController : MonoBehaviour
             audioSourceMusicaFundo.Play();
         }
     }
-
         public void ToggleMusic()
     {
         if (isPlaying)
@@ -49,4 +48,5 @@ public class AudioController : MonoBehaviour
             isPlaying = true;
         }
     }
+
 }

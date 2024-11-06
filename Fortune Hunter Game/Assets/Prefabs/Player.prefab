@@ -176,6 +176,8 @@ MonoBehaviour:
   Speed: 5
   JumpForce: 12
   isJumping: 0
+  audioSourcePulo: {fileID: 0}
+  jumpSound: {fileID: 8300000, guid: e8cc5309d8d2ff64abcea789a0f3b741, type: 3}
 --- !u!95 &1302459506581212660
 Animator:
   serializedVersion: 5

@@ -10,11 +10,21 @@ public class Player : MonoBehaviour
     private Animator anim;
 
 
+
+    // Variável para o som de pulo
+    public AudioSource audioSourcePulo;
+    public AudioClip jumpSound;
+
     // Start is called before the first frame update
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();// Obtém o componente rigidbody do jogador.
         anim = GetComponent<Animator>();// Obtém o componente Animator do jogador.
+
+        if (audioSourcePulo == null)
+        {
+            audioSourcePulo = gameObject.AddComponent<AudioSource>();
+        }
     }
 
     // Update is called once per frame
@@ -55,16 +65,21 @@ public class Player : MonoBehaviour
     // Método para o player pular.
     void Jump(){
 
-        // Verifica se a tecla "W" esta pressionada
+        // Verifica se "W" ou espaço está pressionado.
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Space)){
             if (!isJumping){
                 
-                //Zera velocidade vertical para evitar força acumulada
+                // Zera velocidade vertical para evitar força acumulada.
                 rig.velocity = new Vector2(rig.velocity.x, 0f);
 
+                // Adiciona o impulso do pulo.
                 rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
+                // Ativa a animação de pulo do player.
                 anim.SetBool("jump", true);
                 isJumping = true;
+
+                // Toca o som do pulo.
+                audioSourcePulo.PlayOneShot(jumpSound);
             } 
         }
 
