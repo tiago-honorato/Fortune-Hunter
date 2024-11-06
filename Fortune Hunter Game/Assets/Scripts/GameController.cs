@@ -40,6 +40,7 @@ public class GameController : MonoBehaviour
 
         if (totalScore == totalLevelGems && !blockerOpened && !onMenu)
         {
+            AudioController.instance.PlayOpenDoorEffect();
             tileCollider.enabled = false;
             tileRender.enabled = false;
             exitParticle.Play();

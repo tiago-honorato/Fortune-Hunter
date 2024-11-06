@@ -72,10 +72,17 @@ public class AudioController : MonoBehaviour
 
     }
 
-        public void PlayEnemyDeathSoundEffect(){
+    public void PlayEnemyDeathSoundEffect(){
 
         AudioClip EnemyDeathSound = SoundEffects[5];
         audioSourceSoundEffects.PlayOneShot(EnemyDeathSound);
+
+    }
+
+    public void PlayOpenDoorEffect(){
+
+        AudioClip openSound = SoundEffects[6];
+        audioSourceSoundEffects.PlayOneShot(openSound);
 
     }
 
