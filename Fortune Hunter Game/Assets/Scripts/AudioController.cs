@@ -51,8 +51,23 @@ public class AudioController : MonoBehaviour
 
     }
 
+    public void PlayDeathSoundEffect(){
+
+        AudioClip deathSound = SoundEffects[2];
+        audioSourceSoundEffects.PlayOneShot(deathSound);
+
+    }
+
+    public void PlayClickSoundEffect(){
+
+        AudioClip clickSound = SoundEffects[3];
+        audioSourceSoundEffects.PlayOneShot(clickSound);
+
+    }
+
         public void ToggleMusic()
     {
+        PlayClickSoundEffect();
         if (isPlaying)
         {
             audioSourceMusicaFundo.Pause();

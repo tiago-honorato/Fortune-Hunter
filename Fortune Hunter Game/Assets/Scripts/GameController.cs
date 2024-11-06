@@ -62,17 +62,21 @@ public class GameController : MonoBehaviour
 
         UpdateLifeText();
         gameOver.SetActive(true);
+        AudioController.instance.PlayDeathSoundEffect();
 
     }
 
     public void GotoMenuButton(){
 
+        AudioController.instance.PlayClickSoundEffect();
         ScoreManager.instance.totalScore = 0;
         SceneManager.LoadScene("mainMenu");
 
     }
 
     public void SelectScene(string sceneName){
+
+        AudioController.instance.PlayClickSoundEffect();
 
         if (ScoreManager.instance != null)
         {
