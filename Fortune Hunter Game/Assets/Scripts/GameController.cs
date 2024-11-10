@@ -12,6 +12,8 @@ public class GameController : MonoBehaviour
 
     private bool isPaused = false;
 
+    private bool isShowingControlsTutorial = false;
+
     public int totalScore;
     public int totalLevelGems;
     public TextMeshProUGUI scoreText;
@@ -20,6 +22,7 @@ public class GameController : MonoBehaviour
 
     public static GameController instance;
     public GameObject gameOver;
+    public GameObject ControlsTutorial;
     public GameObject gamePause;
     public TilemapCollider2D tileCollider;
     public TilemapRenderer tileRender;
@@ -132,6 +135,20 @@ public class GameController : MonoBehaviour
             SceneManager.LoadScene(lvlName);   
         }
 
+    }
+
+    public void ToggleControlsTutorial()
+    {
+        if (isShowingControlsTutorial)
+        {
+            ControlsTutorial.SetActive(false);
+            isShowingControlsTutorial = false;
+        }
+        else
+        {
+            ControlsTutorial.SetActive(true);
+            isShowingControlsTutorial = true;
+        }
     }
 
     public void GameQuit(){
