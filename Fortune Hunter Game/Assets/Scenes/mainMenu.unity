@@ -11407,6 +11407,7 @@ MonoBehaviour:
   scoreText: {fileID: 0}
   lifeText: {fileID: 0}
   gameOver: {fileID: 0}
+  gamePause: {fileID: 0}
   tileCollider: {fileID: 0}
   tileRender: {fileID: 0}
   exitParticle: {fileID: 0}

@@ -42,7 +42,7 @@ public class GameController : MonoBehaviour
 
     private void Update() {
 
-        if (Input.GetKeyDown(KeyCode.Escape) && !onMenu)
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P) && !onMenu)
         {
             
             ShowGamePause();
