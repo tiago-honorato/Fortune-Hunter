@@ -9,6 +9,9 @@ public class GameController : MonoBehaviour
 {
 
     public bool onMenu = false;
+
+    private bool isPaused = false;
+
     public int totalScore;
     public int totalLevelGems;
     public TextMeshProUGUI scoreText;
@@ -17,6 +20,7 @@ public class GameController : MonoBehaviour
 
     public static GameController instance;
     public GameObject gameOver;
+    public GameObject gamePause;
     public TilemapCollider2D tileCollider;
     public TilemapRenderer tileRender;
     public ParticleSystem exitParticle;
@@ -34,6 +38,16 @@ public class GameController : MonoBehaviour
         } 
         
 
+    }
+
+    private void Update() {
+
+        if (Input.GetKeyDown(KeyCode.Escape) && !onMenu)
+        {
+            
+            ShowGamePause();
+
+        }
     }
 
     private void OpenBlocker(){
@@ -64,6 +78,24 @@ public class GameController : MonoBehaviour
         UpdateLifeText();
         gameOver.SetActive(true);
         AudioController.instance.PlayDeathSoundEffect();
+
+    }
+
+    public void ShowGamePause(){
+
+        if (isPaused)
+        {
+
+            Time.timeScale = 1;
+            isPaused = false;
+            gamePause.SetActive(false);
+        }else{
+
+            Time.timeScale = 0;
+            isPaused = true;
+            gamePause.SetActive(true);
+
+        }
 
     }
 
