@@ -11,6 +11,8 @@ public class AudioController : MonoBehaviour
     public bool isPlaying = true;
     public static AudioController instance;
 
+    public float volumeStep = 0.2f;
+
 
     void Awake()
     {
@@ -36,6 +38,30 @@ public class AudioController : MonoBehaviour
             audioSourceMusicaFundo.clip = musicaFundoFase;
             audioSourceMusicaFundo.Play();
         }
+    }
+
+    public void ToggleMusic()
+    {
+        if (isPlaying)
+        {
+            audioSourceMusicaFundo.Pause();
+            isPlaying = false;
+        }
+        else
+        {
+            audioSourceMusicaFundo.Play();
+            isPlaying = true;
+        }
+    }
+
+    public void IncreaseVolume()
+    {
+        audioSourceMusicaFundo.volume = Mathf.Clamp(audioSourceMusicaFundo.volume + volumeStep, 0f, 1f);
+    }
+
+    public void DecreaseVolume()
+    {
+        audioSourceMusicaFundo.volume = Mathf.Clamp(audioSourceMusicaFundo.volume - volumeStep, 0f, 1f);
     }
 
     public void PlayjumpSoundEffect(){
@@ -84,20 +110,6 @@ public class AudioController : MonoBehaviour
         AudioClip openSound = SoundEffects[6];
         audioSourceSoundEffects.PlayOneShot(openSound);
 
-    }
-
-        public void ToggleMusic()
-    {
-        if (isPlaying)
-        {
-            audioSourceMusicaFundo.Pause();
-            isPlaying = false;
-        }
-        else
-        {
-            audioSourceMusicaFundo.Play();
-            isPlaying = true;
-        }
     }
 
 }
