@@ -10,6 +10,8 @@ public class GameController : MonoBehaviour
 
     public bool onMenu = false;
 
+    public bool isDead = false;
+
     private bool isShowingControlsTutorial = false;
 
     public int totalScore;
@@ -31,17 +33,29 @@ public class GameController : MonoBehaviour
     void Start()
     {
         instance = this;
+        isDead = false;
 
         if (!onMenu){
             UpdateScoreText();
             UpdateLifeText();
-        } 
-        
+        }        
 
     }
 
     private void Update() {
 
+        verifyIsDead();
+
+    }
+
+    private void verifyIsDead(){
+        if (isDead)
+        {
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+        }
     }
 
     private void OpenBlocker(){
@@ -72,6 +86,7 @@ public class GameController : MonoBehaviour
         UpdateLifeText();
         gameOver.SetActive(true);
         AudioController.instance.PlayDeathSoundEffect();
+        isDead = true;
 
     }
 
