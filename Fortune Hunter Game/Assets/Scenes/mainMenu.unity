@@ -11962,7 +11962,7 @@ GameObject:
   - component: {fileID: 1795075603}
   - component: {fileID: 1795075602}
   m_Layer: 0
-  m_Name: Game Controller
+  m_Name: GameController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11981,6 +11981,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onMenu: 1
+  isDead: 0
   totalScore: 0
   totalLevelGems: 0
   scoreText: {fileID: 0}

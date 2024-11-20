@@ -54,6 +54,7 @@ public class GameController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                ScoreManager.instance.life--;
             }
         }
     }
