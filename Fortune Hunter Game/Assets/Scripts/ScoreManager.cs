@@ -26,4 +26,10 @@ public class ScoreManager : MonoBehaviour
         
     }
 
+    public void AddLife(int amount){
+
+        life += amount;
+
+    }
+
 }

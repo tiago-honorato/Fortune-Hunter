@@ -38,8 +38,8 @@ public class Heart : MonoBehaviour
 
             AudioController.instance.PlayCollectGemSoundEffect();
 
-            GameController.instance.totalScore += Score;
-            GameController.instance.UpdateScoreText();
+            ScoreManager.instance.AddLife(1);
+            GameController.instance.UpdateLifeText();
 
             Destroy(gameObject, 0.25f);
 
