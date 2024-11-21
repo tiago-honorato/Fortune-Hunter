@@ -54,7 +54,7 @@ public class GameController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                ScoreManager.instance.life--;
+                RestartGame();
             }
         }
     }
@@ -111,7 +111,7 @@ public class GameController : MonoBehaviour
 
     }
 
-    public void RestartGame(string lvlName){
+    public void RestartGame(){
 
         ScoreManager.instance.life--;
 
@@ -121,7 +121,7 @@ public class GameController : MonoBehaviour
             ScoreManager.instance.life = 5;
         }else
         {
-            SceneManager.LoadScene(lvlName);   
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);   
         }
 
     }
