@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class KeepCanvasPause : MonoBehaviour
 {
@@ -11,8 +13,11 @@ public class KeepCanvasPause : MonoBehaviour
     public GameObject gamePause;
 
     private bool isPaused = false;
-
-
+    private bool timerActive = false;
+    public GameObject timer;
+    public TextMeshProUGUI timerText;
+    public GameObject timerOptions;
+    private float elapsedTime;
 
     void Awake()
     {
@@ -35,8 +40,19 @@ public class KeepCanvasPause : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void Update()    
     {
+        if(GameController.instance.gameStarted)StartTimer();
+
+        if (GameController.instance.onSettings)
+        {
+            timerOptions.SetActive(true);
+        } else if(!GameController.instance.onSettings){
+
+            timerOptions.SetActive(false);
+
+        }
+
         if (!GameController.instance.onMenu)
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))
         {
@@ -72,6 +88,28 @@ public class KeepCanvasPause : MonoBehaviour
         ShowGamePause();
 
     }
+
+    public void ToggleTimer(){
+        if (!timerActive)
+        {
+            timer.SetActive(true);
+            timerActive=true;
+        }else{
+            timer.SetActive(false);
+            timerActive=false;
+        }
+    }
+
+    public void StartTimer(){
+
+        elapsedTime += Time.deltaTime;
+        int min = Mathf.FloorToInt(elapsedTime/60);
+        int sec = Mathf.FloorToInt(elapsedTime%60);
+
+        timerText.text = string.Format("{0:00}:{1:00}", min, sec);
+
+    }
+
     public void GotoMenuButton(){
 
         AudioController.instance.PlayClickSoundEffect();

@@ -9,8 +9,10 @@ public class GameController : MonoBehaviour
 {
 
     public bool onMenu = false;
-
+    public bool onSettings = false;
     public bool isDead = false;
+
+    public bool gameStarted = false;
 
     private bool isShowingControlsTutorial = false;
 
@@ -96,6 +98,20 @@ public class GameController : MonoBehaviour
         AudioController.instance.PlayClickSoundEffect();
         ScoreManager.instance.totalScore = 0;
         SceneManager.LoadScene("mainMenu");
+
+    }
+
+    public void StartGame(){
+
+        AudioController.instance.PlayClickSoundEffect();
+
+        if (ScoreManager.instance != null)
+        {
+            ScoreManager.instance.totalScore = 0;
+        }
+        SceneManager.LoadScene("nivel_1");
+
+        gameStarted = true;
 
     }
 
