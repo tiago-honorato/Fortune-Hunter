@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class KeepCanvasPause : MonoBehaviour
 {
@@ -36,6 +37,7 @@ public class KeepCanvasPause : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!GameController.instance.onMenu)
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))
         {
             
@@ -60,6 +62,22 @@ public class KeepCanvasPause : MonoBehaviour
             gamePause.SetActive(true);
 
         }
+
+    }
+
+        public void RestartLevel(){
+
+        AudioController.instance.PlayClickSoundEffect();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        ShowGamePause();
+
+    }
+    public void GotoMenuButton(){
+
+        AudioController.instance.PlayClickSoundEffect();
+        ScoreManager.instance.totalScore = 0;
+        SceneManager.LoadScene("mainMenu");
+        ShowGamePause();
 
     }
 }

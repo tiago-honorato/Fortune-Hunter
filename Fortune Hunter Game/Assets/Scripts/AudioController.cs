@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class AudioController : MonoBehaviour
@@ -9,9 +10,13 @@ public class AudioController : MonoBehaviour
     public AudioClip[] backgroundSongs;
     public AudioClip[] SoundEffects;
     public bool isPlaying = true;
+
+    public TextMeshProUGUI MusicPercentTxt;
+    public TextMeshProUGUI EffectsPercentTxt;
+
     public static AudioController instance;
 
-    public float volumeStep = 0.2f;
+    public float volumeStep = 0.1f;
 
 
     void Awake()
@@ -54,14 +59,37 @@ public class AudioController : MonoBehaviour
         }
     }
 
-    public void IncreaseVolume()
+    public void IncreaseMusicVolume()
     {
         audioSourceMusicaFundo.volume = Mathf.Clamp(audioSourceMusicaFundo.volume + volumeStep, 0f, 1f);
+        audioSourceMusicaFundo.volume = Mathf.Round(audioSourceMusicaFundo.volume * 10f) / 10f;
+        MusicPercentTxt.text = Mathf.RoundToInt(audioSourceMusicaFundo.volume * 100).ToString();
     }
 
-    public void DecreaseVolume()
+    public void DecreaseMusicVolume()
     {
         audioSourceMusicaFundo.volume = Mathf.Clamp(audioSourceMusicaFundo.volume - volumeStep, 0f, 1f);
+        audioSourceMusicaFundo.volume = Mathf.Round(audioSourceMusicaFundo.volume * 10f) / 10f;
+        
+        MusicPercentTxt.text = Mathf.RoundToInt(audioSourceMusicaFundo.volume * 100).ToString();
+
+    }
+
+    public void IncreaseEffectsVolume()
+    {
+        audioSourceSoundEffects.volume = Mathf.Clamp(audioSourceSoundEffects.volume + volumeStep, 0f, 1f);
+        audioSourceSoundEffects.volume = Mathf.Round(audioSourceSoundEffects.volume * 10f) / 10f;
+        PlayCollectGemSoundEffect();
+        EffectsPercentTxt.text = Mathf.RoundToInt(audioSourceSoundEffects.volume * 100).ToString();
+    }
+
+    public void DecreaseEffectsVolume()
+    {
+        audioSourceSoundEffects.volume = Mathf.Clamp(audioSourceSoundEffects.volume - volumeStep, 0f, 1f);
+        audioSourceSoundEffects.volume = Mathf.Round(audioSourceSoundEffects.volume * 10f) / 10f;
+        PlayCollectGemSoundEffect();
+        EffectsPercentTxt.text = Mathf.RoundToInt(audioSourceSoundEffects.volume * 100).ToString();
+
     }
 
     public void PlayjumpSoundEffect(){
