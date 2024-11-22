@@ -3058,7 +3058,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6406483920974589998, guid: e68ab2bf37fcd2543a217c413f9ecc4a, type: 3}
       propertyPath: lvlName
-      value: nivel_13
+      value: nivel_14
       objectReference: {fileID: 0}
     - target: {fileID: 7506225265960272943, guid: e68ab2bf37fcd2543a217c413f9ecc4a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19080,7 +19080,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onMenu: 0
+  onSettings: 0
   isDead: 0
+  gameStarted: 0
   totalScore: 0
   totalLevelGems: 7
   scoreText: {fileID: 999564799}

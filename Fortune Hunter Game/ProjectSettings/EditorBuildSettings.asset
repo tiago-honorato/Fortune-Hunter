@@ -9,12 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/mainMenu.unity
     guid: 2cab45decda266249a1375c280c1b2a1
   - enabled: 1
-    path: Assets/Scenes/UI_scenes/levelSelector.unity
-    guid: 38ea25992b3c7cd4fb60cd5220bebf89
-  - enabled: 1
-    path: Assets/Scenes/UI_scenes/settins.unity
-    guid: 98b1d154d0c63114c96ff78cbec832be
-  - enabled: 1
     path: Assets/Scenes/level_scenes/nivel_1.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
@@ -56,6 +50,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/level_scenes/nivel_13.unity
     guid: d913d480ff1c0c34c89120745b308d3a
+  - enabled: 1
+    path: Assets/Scenes/level_scenes/nivel_14.unity
+    guid: 98e2449bfe3a2bc45ba700aff340e9bd
+  - enabled: 1
+    path: Assets/Scenes/UI_scenes/levelSelector.unity
+    guid: 38ea25992b3c7cd4fb60cd5220bebf89
+  - enabled: 1
+    path: Assets/Scenes/UI_scenes/levelSelector_2.unity
+    guid: aa2589e1a44af48489ed7c1f46f80c52
+  - enabled: 1
+    path: Assets/Scenes/UI_scenes/settins.unity
+    guid: 98b1d154d0c63114c96ff78cbec832be
   - enabled: 1
     path: Assets/Scenes/UI_scenes/story.unity
     guid: 4df4dab27d6e4a64cb1b5e147ca66e81
