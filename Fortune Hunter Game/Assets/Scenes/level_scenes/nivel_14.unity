@@ -670,6 +670,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rat
       objectReference: {fileID: 0}
+    - target: {fileID: 2087836421677186274, guid: 5072c2ee0b61e9649b88e1ed92f2aaad, type: 3}
+      propertyPath: PlayerAnim
+      value: 
+      objectReference: {fileID: 683063436}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2226,6 +2230,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 234eef2b618cd3d4ab5cb61421a78ce3, type: 3}
+--- !u!95 &683063436 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1302459506581212660, guid: 234eef2b618cd3d4ab5cb61421a78ce3, type: 3}
+  m_PrefabInstance: {fileID: 683063435}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &768033368
 GameObject:
   m_ObjectHideFlags: 0
@@ -16676,7 +16685,6 @@ MonoBehaviour:
   onMenu: 0
   onSettings: 0
   isDead: 0
-  gameStarted: 0
   totalScore: 0
   totalLevelGems: 5
   scoreText: {fileID: 999564799}

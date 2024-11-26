@@ -12,6 +12,8 @@ public class Chest : MonoBehaviour
     public SpriteRenderer itemRender;
     public CircleCollider2D itemCollider;
 
+    public GameObject collected;
+
     private void Start() {
         
 
@@ -23,6 +25,7 @@ public class Chest : MonoBehaviour
         if (collider.gameObject.tag == "Player")
         {
 
+            collected.SetActive(true);
 
             coll.enabled = false;
             anim.SetTrigger("open");
@@ -31,7 +34,7 @@ public class Chest : MonoBehaviour
             itemRender.enabled = true;
             upParticle.Play();
             itemParticle.Play();
-
+            
             AudioController.instance.PlayCollectGemSoundEffect();
 
         }

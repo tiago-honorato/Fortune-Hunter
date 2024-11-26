@@ -15175,7 +15175,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onMenu: 0
+  onSettings: 0
   isDead: 0
+  firstLevel: 1
   totalScore: 0
   totalLevelGems: 3
   scoreText: {fileID: 951391689}

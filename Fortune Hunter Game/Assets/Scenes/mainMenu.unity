@@ -9167,6 +9167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gamePause: {fileID: 312985775}
   timer: {fileID: 2066351802}
+  timerRunning: 0
   timerText: {fileID: 2066351804}
   timerOptions: {fileID: 739884255}
 --- !u!1001 &819317433
@@ -9694,8 +9695,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1795075602}
         m_TargetAssemblyTypeName: GameController, Assembly-CSharp
-        m_MethodName: SelectScene
-        m_Mode: 5
+        m_MethodName: StartGame
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -12316,7 +12317,6 @@ MonoBehaviour:
   onMenu: 1
   onSettings: 0
   isDead: 0
-  gameStarted: 0
   totalScore: 0
   totalLevelGems: 0
   scoreText: {fileID: 0}
@@ -12987,7 +12987,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0:00
+  m_text: 00:00
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
   m_sharedMaterial: {fileID: 7708882091815065706, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}

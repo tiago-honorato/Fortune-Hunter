@@ -8,13 +8,14 @@ using UnityEngine.UI;
 public class KeepCanvasPause : MonoBehaviour
 {
 
-    private static KeepCanvasPause instance;
+    public static KeepCanvasPause instance;
 
     public GameObject gamePause;
 
     private bool isPaused = false;
     private bool timerActive = false;
     public GameObject timer;
+    public bool timerRunning = false;
     public TextMeshProUGUI timerText;
     public GameObject timerOptions;
     private float elapsedTime;
@@ -42,7 +43,8 @@ public class KeepCanvasPause : MonoBehaviour
     // Update is called once per frame
     void Update()    
     {
-        if(GameController.instance.gameStarted)StartTimer();
+
+        ShowTimer();
 
         if (GameController.instance.onSettings)
         {
@@ -90,6 +92,10 @@ public class KeepCanvasPause : MonoBehaviour
     }
 
     public void ToggleTimer(){
+
+        elapsedTime = 0f;
+        timerText.text = "00:00";
+
         if (!timerActive)
         {
             timer.SetActive(true);
@@ -100,7 +106,9 @@ public class KeepCanvasPause : MonoBehaviour
         }
     }
 
-    public void StartTimer(){
+    public void ShowTimer(){
+
+        if (!timerRunning) return;
 
         elapsedTime += Time.deltaTime;
         int min = Mathf.FloorToInt(elapsedTime/60);
@@ -110,7 +118,17 @@ public class KeepCanvasPause : MonoBehaviour
 
     }
 
+    public void pauseTimer(){
+        timerRunning = false;
+    }
+
+    public void resumeTimer(){
+        timerRunning = true;
+    }
+
     public void GotoMenuButton(){
+
+        pauseTimer();
 
         AudioController.instance.PlayClickSoundEffect();
         ScoreManager.instance.totalScore = 0;

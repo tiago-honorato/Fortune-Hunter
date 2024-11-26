@@ -11,9 +11,6 @@ public class GameController : MonoBehaviour
     public bool onMenu = false;
     public bool onSettings = false;
     public bool isDead = false;
-
-    public bool gameStarted = false;
-
     private bool isShowingControlsTutorial = false;
 
     public int totalScore;
@@ -95,6 +92,8 @@ public class GameController : MonoBehaviour
 
     public void GotoMenuButton(){
 
+        KeepCanvasPause.instance.pauseTimer();
+
         AudioController.instance.PlayClickSoundEffect();
         ScoreManager.instance.totalScore = 0;
         SceneManager.LoadScene("mainMenu");
@@ -103,6 +102,8 @@ public class GameController : MonoBehaviour
 
     public void StartGame(){
 
+        KeepCanvasPause.instance.resumeTimer();
+
         AudioController.instance.PlayClickSoundEffect();
 
         if (ScoreManager.instance != null)
@@ -110,8 +111,6 @@ public class GameController : MonoBehaviour
             ScoreManager.instance.totalScore = 0;
         }
         SceneManager.LoadScene("nivel_1");
-
-        gameStarted = true;
 
     }
 
