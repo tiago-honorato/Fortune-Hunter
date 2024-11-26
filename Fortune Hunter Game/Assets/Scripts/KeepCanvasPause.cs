@@ -68,13 +68,13 @@ public class KeepCanvasPause : MonoBehaviour
 
         if (isPaused)
         {
-
+            timerText.color = Color.white;
             Time.timeScale = 1;
             isPaused = false;
             gamePause.SetActive(false);
 
         }else{
-
+            timerText.color = Color.red;
             Time.timeScale = 0;
             isPaused = true;
             gamePause.SetActive(true);
@@ -93,17 +93,24 @@ public class KeepCanvasPause : MonoBehaviour
 
     public void ToggleTimer(){
 
-        elapsedTime = 0f;
-        timerText.text = "00:00";
+        ResetTimer();
 
         if (!timerActive)
         {
+            timerText.color = Color.white;
             timer.SetActive(true);
             timerActive=true;
         }else{
             timer.SetActive(false);
             timerActive=false;
         }
+    }
+
+    public void ResetTimer(){
+
+        elapsedTime = 0f;
+        timerText.text = "00:00";
+
     }
 
     public void ShowTimer(){
@@ -119,10 +126,12 @@ public class KeepCanvasPause : MonoBehaviour
     }
 
     public void pauseTimer(){
+        timerText.color = Color.red;
         timerRunning = false;
     }
 
     public void resumeTimer(){
+        timerText.color = Color.white;
         timerRunning = true;
     }
 

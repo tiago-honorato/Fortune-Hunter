@@ -103,6 +103,7 @@ public class GameController : MonoBehaviour
     public void StartGame(){
 
         KeepCanvasPause.instance.resumeTimer();
+        KeepCanvasPause.instance.ResetTimer();
 
         AudioController.instance.PlayClickSoundEffect();
 
@@ -132,6 +133,9 @@ public class GameController : MonoBehaviour
 
         if (ScoreManager.instance.life <= 0)
         {
+
+            KeepCanvasPause.instance.pauseTimer();
+
             SceneManager.LoadScene("mainMenu");
             ScoreManager.instance.life = 5;
         }else
