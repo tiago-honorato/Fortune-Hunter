@@ -60,6 +60,9 @@ EditorBuildSettings:
     path: Assets/Scenes/UI_scenes/levelSelector_2.unity
     guid: aa2589e1a44af48489ed7c1f46f80c52
   - enabled: 1
+    path: Assets/Scenes/UI_scenes/levelSelector_3.unity
+    guid: ca53c9593a270194e83f5879aa15b3b6
+  - enabled: 1
     path: Assets/Scenes/UI_scenes/settins.unity
     guid: 98b1d154d0c63114c96ff78cbec832be
   - enabled: 1

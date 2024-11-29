@@ -9659,6 +9659,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 730468708939246838, guid: 64413b4650edccd42913e748ce7320eb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3745530309684145679, guid: 64413b4650edccd42913e748ce7320eb, type: 3}
       propertyPath: m_Name
       value: Fan
@@ -21536,6 +21540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onMenu: 0
+  onSettings: 0
   isDead: 0
   totalScore: 0
   totalLevelGems: 3
