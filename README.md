@@ -1,53 +1,52 @@
 # Fortune Hunter 🏆💎  
-**Fortune Hunter** é meu primeiro jogo de plataforma 2D desenvolvido na Unity, onde você assume o papel de um burguês em busca de seus diamantes espalhados pelo mapa. Encare perigos, pule obstáculos, evite armadilhas e recupere sua fortuna.
+**Fortune Hunter** is my first 2D platformer game developed in Unity, where you take on the role of a bourgeois character in search of his diamonds scattered across the map. Face dangers, jump over obstacles, avoid traps, and reclaim your fortune.
 
 ---
 
-## 🎮 **Descrição do Jogo**
-No controle de um personagem carismático e um tanto excêntrico, sua missão é simples: recuperar todas as joias perdidas em um mundo repleto de plataformas.
+## 🎮 **Game Description**
+In control of a charismatic and somewhat eccentric character, your mission is simple: recover all the lost diamonds in a world filled with platforms.
 
 ---
 
-## 🕹️ **Como Jogar**
-1. **Movimentação**: Use as teclas **A/D** ou **Setas Esquerda/Direita** para mover o personagem.
-2. **Pulo**: Pressione **Espaço** ou **W** para pular.
-3. **Colete os diamantes**: Percorra o mapa coletando todas os diamantes para completar o nível.
-4. **Evite Armadilhas**: Cuide-se com obstáculos e armadilhas que podem acabar com sua aventura.
+## 🕹️ **How to Play**
+1. **Movement**: Use **A/D** or **Arrow Keys** to move the character.
+2. **Jump**: Press **Space** or **W** to jump.
+3. **Pause**: Press **ESC** to pauase the game.
+4. **Collect Diamonds**: Explore the map and collect all the diamonds to complete the level.
+5. **Avoid Traps**: Be cautious of obstacles and traps that can end your adventure.
 
 ---
 
-## 🚀 **Como Instalar e Jogar**
-1. Faça o download do jogo no [link oficial](#) (adicione aqui o link de download do jogo).
-2. Extraia os arquivos do jogo em um diretório de sua preferência.
-3. Execute o arquivo `FortuneHunter.exe` para começar a aventura!
+## 🚀 **How to Install and Play**
+1. Download the game from ich.io [official link](#)
+2. Extract the game files to a directory of your choice.
+3. Run the `FortuneHunter.exe` file to start the adventure!
 
 ---
 
-## 📌 **SYSTEM REQUIREMENTS**
+## 📌 **System Requirements**
 ### Windows
-- **OS**: Requires a 64-bit processor and operating system
-- **Processor**: x64 architecture with SSE2 instruction set support
-- **Memory**: 1 GB RAM
-- **Graphics**: DX11, DX12 capable 
-- **Storage**: 600 MB available space 
+- **OS**: Requires a 64-bit processor and operating system  
+- **Processor**: x64 architecture with SSE2 instruction set support  
+- **Memory**: 1 GB RAM  
+- **Graphics**: DX11, DX12 capable  
+- **Storage**: 200 MB available space  
 
 ---
 
-## 🛠️ **Desenvolvimento**
-**Fortune Hunter** foi desenvolvido utilizando a Unity Engine. O jogo reflete o esforço em criar uma experiência divertida e acessível para todos os jogadores, com foco em um gameplay viciante e recompensador.
+## 🛠️ **Development**
+**Fortune Hunter** was developed using the Unity Engine. The game reflects the effort to create a fun and accessible experience for all players, focusing on addictive and rewarding gameplay.
 
-### Tecnologias Utilizadas
+### Technologies Used
 - Unity Engine (C#)
-- Piskelapp (some pixel arts)
+- Piskelapp (some pixel art)
 
 ---
 
-## 🤝 **Contribua**
-Se você encontrou bugs, tem ideias para novos recursos ou deseja contribuir com o projeto, sinta-se à vontade para abrir uma **Issue** ou um **Pull Request** no repositório oficial do projeto [aqui](#).
+## 🤝 **Contribute**
+If you encounter bugs, have ideas for new features, or want to contribute to the project, feel free to open an **Issue** or a **Pull Request** in the official project repository [here](#).
 
 ---
 
-## 🏅 **Agradecimentos**
+## 🏅 **Acknowledgments**
 ...
-
----
