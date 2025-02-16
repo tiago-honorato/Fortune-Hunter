@@ -7,6 +7,9 @@
 In control of a charismatic and somewhat eccentric character, your mission is simple: recover all the lost diamonds in a world filled with platforms.
 
 ---
+![telaPrincipal](https://github.com/user-attachments/assets/c31ae47d-1720-4002-beea-b1d2ab031f38)
+
+---
 
 ## 🕹️ **How to Play**
 1. **Movement**: Use **A/D** or **Arrow Keys** to move the character.
