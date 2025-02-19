@@ -21,7 +21,7 @@ In control of a charismatic and somewhat eccentric character, your mission is si
 ---
 
 ## 🚀 **How to Install and Play**
-1. Download the game from ich.io [official link](#)
+1. Download the game from ich.io [official link](https://hiruz.itch.io/fortune-hunter)
 2. Extract the game files to a directory of your choice.
 3. Run the `FortuneHunter.exe` file to start the adventure!
 
