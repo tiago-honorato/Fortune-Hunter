@@ -7,6 +7,8 @@ public class ScoreManager : MonoBehaviour
 
     public int life = 5;
 
+    public bool infiniteLifeIsOn = false;
+
     private void Awake()
     {
         if (instance == null)

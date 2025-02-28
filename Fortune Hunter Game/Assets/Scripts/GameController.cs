@@ -2,13 +2,14 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
+using System;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class GameController : MonoBehaviour
 {
 
     public bool onMenu = false;
     public bool onSettings = false;
-    public bool infiniteLifeIsOn = false;
     public bool isDead = false;
     private bool isShowingControlsTutorial = false;
 
@@ -21,6 +22,8 @@ public class GameController : MonoBehaviour
     public static GameController instance;
     public GameObject gameOver;
     public GameObject ControlsTutorial;
+    public GameObject CheckedBtn;
+    public GameObject UncheckedBtn;
     public TilemapCollider2D tileCollider;
     public TilemapRenderer tileRender;
     public ParticleSystem exitParticle;
@@ -78,12 +81,18 @@ public class GameController : MonoBehaviour
 
     public void UpdateLifeText(){
         
-        if (infiniteLifeIsOn)
+        if (ScoreManager.instance.infiniteLifeIsOn)
         {
             lifeText.text = "∞";
+            
+            lifeText.rectTransform.anchoredPosition += new Vector2(0, 20);
+
         }else
         {
             lifeText.text = ScoreManager.instance.life.ToString();
+            
+            lifeText.rectTransform.anchoredPosition = new Vector2(lifeText.rectTransform.anchoredPosition.x, 0);
+
         }
     }
 
@@ -175,8 +184,21 @@ public class GameController : MonoBehaviour
 
     public void ToggleInfiniteLife(){
 
-        infiniteLifeIsOn = true;
-        ScoreManager.instance.life = 9999;
+        if (ScoreManager.instance.infiniteLifeIsOn == false)
+        {
+            ScoreManager.instance.infiniteLifeIsOn = true;
+            ScoreManager.instance.life = 9999;
+
+            CheckedBtn.SetActive(true);
+            UncheckedBtn.SetActive(false);
+
+        }else
+        {
+            ScoreManager.instance.infiniteLifeIsOn = false;
+            ScoreManager.instance.life = 5;
+            UncheckedBtn.SetActive(true);
+            CheckedBtn.SetActive(false);
+        }
 
     }
 
