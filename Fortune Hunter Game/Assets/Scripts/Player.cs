@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
     public float Speed;// Velocidade do jogador.
     public float JumpForce;// Força do pulo do jogador.
     public bool isJumping; // Está pulando ou não.
+    public static bool infiniteJump = false;
     private Rigidbody2D rig;
     private Animator anim;
 
@@ -20,7 +21,6 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
         Move();// Chama o método move a cada tick.
         Jump();// Chama o método jump a cada tick.
     }
@@ -57,7 +57,7 @@ public class Player : MonoBehaviour
 
         // Verifica se "W" ou espaço está pressionado.
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Space) || Input.GetButtonDown("Jump")){
-            if (!isJumping){
+            if (!isJumping || infiniteJump){
                 
                 // Zera velocidade vertical para evitar força acumulada.
                 rig.velocity = new Vector2(rig.velocity.x, 0f);
@@ -66,7 +66,9 @@ public class Player : MonoBehaviour
                 rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
                 // Ativa a animação de pulo do player.
                 anim.SetBool("jump", true);
+
                 isJumping = true;
+                
 
             // Chama o som de pulo a partir do AudioController
             AudioController.instance.PlayjumpSoundEffect();

@@ -22,8 +22,6 @@ public class GameController : MonoBehaviour
     public static GameController instance;
     public GameObject gameOver;
     public GameObject ControlsTutorial;
-    public GameObject CheckedBtn;
-    public GameObject UncheckedBtn;
     public TilemapCollider2D tileCollider;
     public TilemapRenderer tileRender;
     public ParticleSystem exitParticle;
@@ -189,22 +187,34 @@ public class GameController : MonoBehaviour
             ScoreManager.instance.infiniteLifeIsOn = true;
             ScoreManager.instance.life = 9999;
 
-            CheckedBtn.SetActive(true);
-            UncheckedBtn.SetActive(false);
+            KeepCanvasPause.instance.LifeCheckedBtn.SetActive(true);
+            KeepCanvasPause.instance.LifeUncheckedBtn.SetActive(false);
 
         }else
         {
             ScoreManager.instance.infiniteLifeIsOn = false;
             ScoreManager.instance.life = 5;
-            UncheckedBtn.SetActive(true);
-            CheckedBtn.SetActive(false);
+            KeepCanvasPause.instance.LifeUncheckedBtn.SetActive(true);
+            KeepCanvasPause.instance.LifeCheckedBtn.SetActive(false);
         }
 
     }
 
     public void ToggleInfiniteJump(){
 
-        //...
+        if (Player.infiniteJump == false && onSettings)
+        {
+            Player.infiniteJump = true;
+
+            KeepCanvasPause.instance.JumpCheckedBtn.SetActive(true);
+            KeepCanvasPause.instance.JumpUncheckedBtn.SetActive(false);
+
+        }else
+        {
+            Player.infiniteJump = false;
+            KeepCanvasPause.instance.JumpUncheckedBtn.SetActive(true);
+            KeepCanvasPause.instance.JumpCheckedBtn.SetActive(false);
+        }
 
     }
 

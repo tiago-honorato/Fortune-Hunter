@@ -1,9 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class KeepCanvasPause : MonoBehaviour
 {
@@ -18,6 +15,11 @@ public class KeepCanvasPause : MonoBehaviour
     public bool timerRunning = false;
     public TextMeshProUGUI timerText;
     public GameObject timerOptions;
+    public GameObject checkBoxes;
+    public GameObject LifeCheckedBtn;
+    public GameObject LifeUncheckedBtn;
+    public GameObject JumpCheckedBtn;
+    public GameObject JumpUncheckedBtn;
     private float elapsedTime;
 
     void Awake()
@@ -49,9 +51,14 @@ public class KeepCanvasPause : MonoBehaviour
         if (GameController.instance.onSettings)
         {
             timerOptions.SetActive(true);
+
+            checkBoxes.SetActive(true);
+
         } else if(!GameController.instance.onSettings){
 
             timerOptions.SetActive(false);
+
+            checkBoxes.SetActive(false);
 
         }
 
