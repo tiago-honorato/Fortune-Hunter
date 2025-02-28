@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
@@ -10,6 +8,7 @@ public class GameController : MonoBehaviour
 
     public bool onMenu = false;
     public bool onSettings = false;
+    public bool infiniteLifeIsOn = false;
     public bool isDead = false;
     private bool isShowingControlsTutorial = false;
 
@@ -78,7 +77,14 @@ public class GameController : MonoBehaviour
     }
 
     public void UpdateLifeText(){
-        lifeText.text = ScoreManager.instance.life.ToString();
+        
+        if (infiniteLifeIsOn)
+        {
+            lifeText.text = "∞";
+        }else
+        {
+            lifeText.text = ScoreManager.instance.life.ToString();
+        }
     }
 
     public void ShowGameOver(){
@@ -162,6 +168,21 @@ public class GameController : MonoBehaviour
     public void GameQuit(){
 
         Application.Quit();
+
+    }
+
+    //CHEATS FUNCTIONS
+
+    public void ToggleInfiniteLife(){
+
+        infiniteLifeIsOn = true;
+        ScoreManager.instance.life = 9999;
+
+    }
+
+    public void ToggleInfiniteJump(){
+
+        //...
 
     }
 
