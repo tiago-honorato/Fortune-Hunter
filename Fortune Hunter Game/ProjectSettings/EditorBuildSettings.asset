@@ -57,6 +57,9 @@ EditorBuildSettings:
     path: Assets/Scenes/level_scenes/nivel_15.unity
     guid: f033b316cb2f6444a929df6d0dc90180
   - enabled: 1
+    path: Assets/Scenes/level_scenes/nivel_16.unity
+    guid: 41faa5d2fa96b274ea4b6df5a97e8c56
+  - enabled: 1
     path: Assets/Scenes/UI_scenes/levelSelector.unity
     guid: 38ea25992b3c7cd4fb60cd5220bebf89
   - enabled: 1
