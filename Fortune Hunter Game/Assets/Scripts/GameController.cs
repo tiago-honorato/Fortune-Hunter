@@ -83,14 +83,15 @@ public class GameController : MonoBehaviour
         {
             lifeText.text = "∞";
             
-            lifeText.rectTransform.anchoredPosition += new Vector2(0, 20);
+            //lifeText.rectTransform.anchoredPosition += new Vector2(0, 20);
+            lifeText.rectTransform.anchoredPosition = new Vector2(lifeText.rectTransform.anchoredPosition.x, 20);
 
         }else
         {
             lifeText.text = ScoreManager.instance.life.ToString();
             
+            //lifeText.rectTransform.anchoredPosition = new Vector2(lifeText.rectTransform.anchoredPosition.x, 0);
             lifeText.rectTransform.anchoredPosition = new Vector2(lifeText.rectTransform.anchoredPosition.x, 0);
-
         }
     }
 
@@ -182,6 +183,8 @@ public class GameController : MonoBehaviour
 
     public void ToggleInfiniteLife(){
 
+        AudioController.instance.PlayClickSoundEffect();
+
         if (ScoreManager.instance.infiniteLifeIsOn == false)
         {
             ScoreManager.instance.infiniteLifeIsOn = true;
@@ -201,6 +204,8 @@ public class GameController : MonoBehaviour
     }
 
     public void ToggleInfiniteJump(){
+
+        AudioController.instance.PlayClickSoundEffect();
 
         if (Player.infiniteJump == false && onSettings)
         {

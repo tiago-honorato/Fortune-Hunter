@@ -51,11 +51,17 @@ public class AudioController : MonoBehaviour
         {
             audioSourceMusicaFundo.Pause();
             isPlaying = false;
+
+            KeepCanvasPause.instance.volumeOffBtn.SetActive(true);
+            KeepCanvasPause.instance.volumeOnBtn.SetActive(false);
         }
         else
         {
             audioSourceMusicaFundo.Play();
             isPlaying = true;
+
+            KeepCanvasPause.instance.volumeOffBtn.SetActive(false);
+            KeepCanvasPause.instance.volumeOnBtn.SetActive(true);
         }
     }
 

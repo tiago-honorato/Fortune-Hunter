@@ -20,6 +20,8 @@ public class KeepCanvasPause : MonoBehaviour
     public GameObject LifeUncheckedBtn;
     public GameObject JumpCheckedBtn;
     public GameObject JumpUncheckedBtn;
+    public GameObject volumeOffBtn;
+    public GameObject volumeOnBtn;
     private float elapsedTime;
 
     void Awake()
@@ -99,6 +101,8 @@ public class KeepCanvasPause : MonoBehaviour
     }
 
     public void ToggleTimer(){
+
+        AudioController.instance.PlayClickSoundEffect();
 
         ResetTimer();
 
