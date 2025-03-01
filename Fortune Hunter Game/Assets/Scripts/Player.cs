@@ -69,9 +69,11 @@ public class Player : MonoBehaviour
 
                 isJumping = true;
                 
-
-            // Chama o som de pulo a partir do AudioController
-            AudioController.instance.PlayjumpSoundEffect();
+                if (!infiniteJump)
+                {
+                    // Chama o som de pulo a partir do AudioController
+                    AudioController.instance.PlayjumpSoundEffect();
+                }
             
             } 
         }
