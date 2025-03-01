@@ -161,6 +161,9 @@ public class GameController : MonoBehaviour
 
     public void ToggleControlsTutorial()
     {
+
+        AudioController.instance.PlayClickSoundEffect();
+
         if (isShowingControlsTutorial)
         {
             ControlsTutorial.SetActive(false);
