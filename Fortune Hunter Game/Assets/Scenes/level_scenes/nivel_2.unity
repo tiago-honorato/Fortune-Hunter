@@ -9256,7 +9256,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 07ddc326f9eb9664dbc5daf2db35303b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9a6ea1039cb1bce4089d781ad180852d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -20880,6 +20880,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onMenu: 0
+  onSettings: 0
   isDead: 0
   totalScore: 0
   totalLevelGems: 4
@@ -20887,6 +20888,7 @@ MonoBehaviour:
   lifeText: {fileID: 1565130097}
   gameOver: {fileID: 1718932479}
   ControlsTutorial: {fileID: 0}
+  Statistics: {fileID: 0}
   tileCollider: {fileID: 1305752653}
   tileRender: {fileID: 1305752650}
   exitParticle: {fileID: 1132017905}

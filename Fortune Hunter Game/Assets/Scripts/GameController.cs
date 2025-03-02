@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour
     public bool onSettings = false;
     public bool isDead = false;
     private bool isShowingControlsTutorial = false;
+    private bool isShowingStatistics = false;
 
     public int totalScore;
     public int totalLevelGems;
@@ -22,6 +23,7 @@ public class GameController : MonoBehaviour
     public static GameController instance;
     public GameObject gameOver;
     public GameObject ControlsTutorial;
+    public GameObject Statistics;
     public TilemapCollider2D tileCollider;
     public TilemapRenderer tileRender;
     public ParticleSystem exitParticle;
@@ -173,6 +175,28 @@ public class GameController : MonoBehaviour
         {
             ControlsTutorial.SetActive(true);
             isShowingControlsTutorial = true;
+
+            Statistics.SetActive(false);
+            isShowingStatistics = false;
+        }
+    }
+        public void ToggleStatistics()
+    {
+
+        AudioController.instance.PlayClickSoundEffect();
+
+        if (isShowingStatistics)
+        {
+            Statistics.SetActive(false);
+            isShowingStatistics = false;
+        }
+        else
+        {
+            Statistics.SetActive(true);
+            isShowingStatistics = true;
+
+            ControlsTutorial.SetActive(false);
+            isShowingControlsTutorial = false;
         }
     }
 
