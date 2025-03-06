@@ -26171,6 +26171,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3427468578400301122, guid: c0ecd834a6611294c8d8c47b1771a85a, type: 3}
+      propertyPath: playerRb
+      value: 
+      objectReference: {fileID: 1939481143}
+    - target: {fileID: 3427468578400301122, guid: c0ecd834a6611294c8d8c47b1771a85a, type: 3}
       propertyPath: jumpForce
       value: 25
       objectReference: {fileID: 0}
@@ -26508,6 +26512,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 234eef2b618cd3d4ab5cb61421a78ce3, type: 3}
+--- !u!50 &1939481143 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 3791167969436534819, guid: 234eef2b618cd3d4ab5cb61421a78ce3, type: 3}
+  m_PrefabInstance: {fileID: 1939481142}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1975558643
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26599,6 +26608,14 @@ PrefabInstance:
     - target: {fileID: 4726700310278090959, guid: 5d44404e9f1abb044bf230667f8a0192, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6324895847399104959, guid: 5d44404e9f1abb044bf230667f8a0192, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1795075602}
+    - target: {fileID: 6324895847399104959, guid: 5d44404e9f1abb044bf230667f8a0192, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GotoMenuButton
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
