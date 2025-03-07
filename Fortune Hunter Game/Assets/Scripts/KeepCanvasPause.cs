@@ -92,7 +92,7 @@ public class KeepCanvasPause : MonoBehaviour
 
     }
 
-        public void RestartLevel(){
+    public void RestartLevel(){
 
         AudioController.instance.PlayClickSoundEffect();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);

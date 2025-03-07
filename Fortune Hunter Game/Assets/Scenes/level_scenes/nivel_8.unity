@@ -12821,6 +12821,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3427468578400301122, guid: c0ecd834a6611294c8d8c47b1771a85a, type: 3}
+      propertyPath: playerRb
+      value: 
+      objectReference: {fileID: 1939481143}
+    - target: {fileID: 3427468578400301122, guid: c0ecd834a6611294c8d8c47b1771a85a, type: 3}
       propertyPath: jumpForce
       value: 20
       objectReference: {fileID: 0}
@@ -38580,6 +38584,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 234eef2b618cd3d4ab5cb61421a78ce3, type: 3}
+--- !u!50 &1939481143 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 3791167969436534819, guid: 234eef2b618cd3d4ab5cb61421a78ce3, type: 3}
+  m_PrefabInstance: {fileID: 1939481142}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2012687305
 GameObject:
   m_ObjectHideFlags: 0

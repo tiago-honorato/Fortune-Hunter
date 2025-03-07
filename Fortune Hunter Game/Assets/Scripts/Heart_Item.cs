@@ -4,10 +4,7 @@ public class Heart_Item : MonoBehaviour
 {
     private SpriteRenderer sr;
     private CircleCollider2D circle;
-
-    public ParticleSystem upParticle;
     public ParticleSystem itemParticle;
-
 
     public GameObject collected;
     public int Score;
