@@ -35,6 +35,8 @@ public class Chest : MonoBehaviour
             upParticle.Play();
             itemParticle.Play();
             
+            Destroy(collected, 0.3f);
+
             AudioController.instance.PlayCollectGemSoundEffect();
 
         }
