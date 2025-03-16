@@ -71,6 +71,13 @@ public class KeepCanvasPause : MonoBehaviour
             ShowGamePause();
 
         }
+        if (!GameController.instance.onMenu)
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            if(!gamePause.activeSelf)
+            GameController.instance.ToogleMap();
+
+        }
     }
 
     public void ShowGamePause(){
@@ -79,14 +86,19 @@ public class KeepCanvasPause : MonoBehaviour
         {
             timerText.color = Color.white;
             Time.timeScale = 1;
+
             isPaused = false;
             gamePause.SetActive(false);
 
         }else{
             timerText.color = Color.red;
             Time.timeScale = 0;
+
             isPaused = true;
             gamePause.SetActive(true);
+
+            GameController.instance.Map.SetActive(false);
+            GameController.instance.BG_Map.SetActive(false);
 
         }
 
