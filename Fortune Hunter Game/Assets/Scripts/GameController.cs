@@ -27,6 +27,8 @@ public class GameController : MonoBehaviour
     public TilemapCollider2D tileCollider;
     public TilemapRenderer tileRender;
     public ParticleSystem exitParticle;
+    public GameObject BG_Map;
+    public GameObject Map;
 
     private bool blockerOpened = false;
 
@@ -157,6 +159,22 @@ public class GameController : MonoBehaviour
         }else
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);   
+        }
+
+    }
+
+    public void ToogleMap(){
+
+        AudioController.instance.PlayClickSoundEffect();
+
+        if (Map.activeSelf)
+        {
+            Map.SetActive(false);
+            BG_Map.SetActive(false);
+        }else
+        {
+            Map.SetActive(true);
+            BG_Map.SetActive(true);
         }
 
     }
