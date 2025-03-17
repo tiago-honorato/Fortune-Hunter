@@ -104,6 +104,10 @@ public class GameController : MonoBehaviour
         AudioController.instance.PlayDeathSoundEffect();
         isDead = true;
 
+        Map.SetActive(false);
+        BG_Map.SetActive(false);
+
+
     }
 
     public void GotoMenuButton(){
@@ -171,8 +175,10 @@ public class GameController : MonoBehaviour
             BG_Map.SetActive(false);
         }else
         {
+            if(!isDead){
             Map.SetActive(true);
             BG_Map.SetActive(true);
+            }
         }
 
     }

@@ -64,7 +64,7 @@ public class KeepCanvasPause : MonoBehaviour
 
         }
 
-        if (!GameController.instance.onMenu)
+        if (!GameController.instance.onMenu && !GameController.instance.isDead)
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))
         {
             
