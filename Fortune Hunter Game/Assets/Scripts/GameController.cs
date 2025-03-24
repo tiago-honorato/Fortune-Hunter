@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour
 
     public bool onMenu = false;
     public bool onSettings = false;
+    public bool onVolumeSettings = false;
     public bool isDead = false;
     private bool isShowingControlsTutorial = false;
     private bool isShowingStatistics = false;

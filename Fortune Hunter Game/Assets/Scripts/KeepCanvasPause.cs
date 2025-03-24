@@ -8,6 +8,7 @@ public class KeepCanvasPause : MonoBehaviour
     public static KeepCanvasPause instance;
 
     public GameObject gamePause;
+    public GameObject volumeSettings;
 
     private bool isPaused = false;
     private bool timerActive = false;
@@ -49,6 +50,13 @@ public class KeepCanvasPause : MonoBehaviour
     {
 
         ShowTimer();
+
+        if (GameController.instance.onVolumeSettings)
+        {
+            volumeSettings.SetActive(true);
+        } else if(!GameController.instance.onVolumeSettings){
+            volumeSettings.SetActive(false);
+        }
 
         if (GameController.instance.onSettings)
         {
