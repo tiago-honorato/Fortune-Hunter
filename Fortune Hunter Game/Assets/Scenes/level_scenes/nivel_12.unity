@@ -7667,8 +7667,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1949312755}
-  - {fileID: 320418231}
   - {fileID: 1718932480}
+  - {fileID: 320418231}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -22019,6 +22019,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onMenu: 0
   onSettings: 0
+  onVolumeSettings: 0
   isDead: 0
   totalScore: 0
   totalLevelGems: 5
@@ -22030,6 +22031,8 @@ MonoBehaviour:
   tileCollider: {fileID: 83345834}
   tileRender: {fileID: 83345833}
   exitParticle: {fileID: 1266733748}
+  BG_Map: {fileID: 0}
+  Map: {fileID: 0}
 --- !u!4 &1795075603
 Transform:
   m_ObjectHideFlags: 0

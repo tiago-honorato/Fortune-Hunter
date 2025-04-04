@@ -105,8 +105,13 @@ public class KeepCanvasPause : MonoBehaviour
             isPaused = true;
             gamePause.SetActive(true);
 
-            GameController.instance.Map.SetActive(false);
-            GameController.instance.BG_Map.SetActive(false);
+            if (GameController.instance.Map != null)
+            {
+                GameController.instance.Map.SetActive(false);
+                GameController.instance.BG_Map.SetActive(false);
+            }
+
+            
 
         }
 

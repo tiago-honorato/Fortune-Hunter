@@ -47,6 +47,20 @@ public class GameController : MonoBehaviour
     private void Update() {
 
         verifyIsDead();
+        verifyBackMainOnMenu();
+
+    }
+
+    private void verifyBackMainOnMenu()
+    {
+
+        if (onMenu && Input.GetKeyDown(KeyCode.Escape))
+        {
+
+            SceneManager.LoadScene("MainMenu");
+
+        }
+
 
     }
 
@@ -105,9 +119,12 @@ public class GameController : MonoBehaviour
         AudioController.instance.PlayDeathSoundEffect();
         isDead = true;
 
-        Map.SetActive(false);
-        BG_Map.SetActive(false);
-
+        if (Map != null)
+        {
+            Map.SetActive(false);
+            BG_Map.SetActive(false);
+        }
+        
 
     }
 
