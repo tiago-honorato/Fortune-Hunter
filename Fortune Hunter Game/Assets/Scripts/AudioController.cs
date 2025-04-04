@@ -48,6 +48,7 @@ public class AudioController : MonoBehaviour
         if (isPlaying)
         {
             audioSourceMusicaFundo.Pause();
+            audioSourceSoundEffects.volume = 0f;
             isPlaying = false;
 
             KeepCanvasPause.instance.volumeOffBtn.SetActive(true);
@@ -56,6 +57,7 @@ public class AudioController : MonoBehaviour
         else
         {
             audioSourceMusicaFundo.Play();
+            audioSourceSoundEffects.volume = 1f;
             isPlaying = true;
 
             KeepCanvasPause.instance.volumeOffBtn.SetActive(false);

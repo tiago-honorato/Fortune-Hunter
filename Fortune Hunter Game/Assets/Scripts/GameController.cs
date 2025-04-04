@@ -47,11 +47,11 @@ public class GameController : MonoBehaviour
     private void Update() {
 
         verifyIsDead();
-        verifyBackMainOnMenu();
+        verifyGoToMenu();
 
     }
 
-    private void verifyBackMainOnMenu()
+    private void verifyGoToMenu()
     {
 
         if (onMenu && Input.GetKeyDown(KeyCode.Escape))
