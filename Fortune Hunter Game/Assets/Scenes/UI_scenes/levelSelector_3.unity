@@ -38,6 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7628,7 +7629,7 @@ GameObject:
   - component: {fileID: 102807055}
   - component: {fileID: 102807054}
   m_Layer: 5
-  m_Name: nivel37
+  m_Name: nivel57
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7707,7 +7708,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: nivel_11
+          m_StringArgument: nivel_57
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &102807055
@@ -7805,7 +7806,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 31
+  m_text: 51
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
   m_sharedMaterial: {fileID: 7708882091815065706, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
@@ -7939,7 +7940,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 27
+  m_text: 47
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
   m_sharedMaterial: {fileID: 7708882091815065706, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
@@ -8029,7 +8030,7 @@ GameObject:
   - component: {fileID: 143817416}
   - component: {fileID: 143817415}
   m_Layer: 5
-  m_Name: nivel26
+  m_Name: nivel46
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8108,7 +8109,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: nivel_6
+          m_StringArgument: nivel_46
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &143817416
@@ -8228,7 +8229,7 @@ GameObject:
   - component: {fileID: 201641893}
   - component: {fileID: 201641892}
   m_Layer: 5
-  m_Name: nivel22
+  m_Name: nivel42
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8307,7 +8308,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: nivel_2
+          m_StringArgument: nivel_42
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &201641893
@@ -8489,7 +8490,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 22
+  m_text: 42
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
   m_sharedMaterial: {fileID: 7708882091815065706, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
@@ -8678,7 +8679,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 26
+  m_text: 46
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
   m_sharedMaterial: {fileID: 7708882091815065706, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
@@ -8768,7 +8769,7 @@ GameObject:
   - component: {fileID: 355201160}
   - component: {fileID: 355201159}
   m_Layer: 5
-  m_Name: nivel32
+  m_Name: nivel52
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8847,7 +8848,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: nivel_12
+          m_StringArgument: nivel_52
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &355201160
@@ -9035,7 +9036,7 @@ GameObject:
   - component: {fileID: 497800331}
   - component: {fileID: 497800330}
   m_Layer: 5
-  m_Name: nivel36
+  m_Name: nivel56
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9114,7 +9115,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: nivel_11
+          m_StringArgument: nivel_56
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &497800331
@@ -9212,9 +9213,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '13
-
-'
+  m_text: 53
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
   m_sharedMaterial: {fileID: 7708882091815065706, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
@@ -9304,7 +9303,7 @@ GameObject:
   - component: {fileID: 512505591}
   - component: {fileID: 512505590}
   m_Layer: 5
-  m_Name: nivel21
+  m_Name: nivel41
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9383,7 +9382,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: nivel_1
+          m_StringArgument: nivel_41
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &512505591
@@ -9489,12 +9488,12 @@ MonoBehaviour:
   m_RequiresColorTexture: 0
   m_Version: 2
   m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
+    quality: 3
+    frameInfluence: 0.1
+    jitterScale: 1
+    mipBias: 0
+    varianceClampScale: 0.9
+    contrastAdaptiveSharpening: 0
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -9618,7 +9617,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 25
+  m_text: 45
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
   m_sharedMaterial: {fileID: 7708882091815065706, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
@@ -9752,7 +9751,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 19
+  m_text: 59
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
   m_sharedMaterial: {fileID: 7708882091815065706, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
@@ -9968,9 +9967,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '12
-
-'
+  m_text: 52
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
   m_sharedMaterial: {fileID: 7708882091815065706, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
@@ -10104,9 +10101,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '20
-
-'
+  m_text: 60
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
   m_sharedMaterial: {fileID: 7708882091815065706, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
@@ -10430,7 +10425,7 @@ GameObject:
   - component: {fileID: 941377432}
   - component: {fileID: 941377431}
   m_Layer: 5
-  m_Name: nivel34
+  m_Name: nivel54
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10509,7 +10504,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: nivel_14
+          m_StringArgument: nivel_54
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &941377432
@@ -10607,7 +10602,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 23
+  m_text: 43
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
   m_sharedMaterial: {fileID: 7708882091815065706, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
@@ -10765,7 +10760,7 @@ GameObject:
   - component: {fileID: 1169657850}
   - component: {fileID: 1169657849}
   m_Layer: 5
-  m_Name: nivel35
+  m_Name: nivel55
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10844,7 +10839,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: nivel_14
+          m_StringArgument: nivel_55
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1169657850
@@ -10942,9 +10937,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '15
-
-'
+  m_text: 55
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
   m_sharedMaterial: {fileID: 7708882091815065706, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
@@ -11166,7 +11159,7 @@ GameObject:
   - component: {fileID: 1222820821}
   - component: {fileID: 1222820820}
   m_Layer: 5
-  m_Name: nivel29
+  m_Name: nivel49
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11245,7 +11238,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: nivel_9
+          m_StringArgument: nivel_49
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1222820821
@@ -11299,7 +11292,7 @@ GameObject:
   - component: {fileID: 1224378598}
   - component: {fileID: 1224378597}
   m_Layer: 5
-  m_Name: nivel33
+  m_Name: nivel53
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11378,7 +11371,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: nivel_13
+          m_StringArgument: nivel_53
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1224378598
@@ -11476,7 +11469,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 14
+  m_text: 54
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
   m_sharedMaterial: {fileID: 7708882091815065706, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
@@ -11610,9 +11603,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '29
-
-'
+  m_text: 49
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
   m_sharedMaterial: {fileID: 7708882091815065706, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
@@ -12863,7 +12854,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 17
+  m_text: 57
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
   m_sharedMaterial: {fileID: 7708882091815065706, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
@@ -13028,7 +13019,7 @@ GameObject:
   - component: {fileID: 1660525574}
   - component: {fileID: 1660525573}
   m_Layer: 5
-  m_Name: nivel25
+  m_Name: nivel45
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13107,7 +13098,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: nivel_5
+          m_StringArgument: nivel_45
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1660525574
@@ -13207,7 +13198,7 @@ GameObject:
   - component: {fileID: 1720679772}
   - component: {fileID: 1720679771}
   m_Layer: 5
-  m_Name: nivel24
+  m_Name: nivel44
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13286,7 +13277,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: nivel_4
+          m_StringArgument: nivel_44
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1720679772
@@ -13340,7 +13331,7 @@ GameObject:
   - component: {fileID: 1731050161}
   - component: {fileID: 1731050160}
   m_Layer: 5
-  m_Name: nivel40
+  m_Name: nivel60
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13419,7 +13410,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: nivel_11
+          m_StringArgument: nivel_60
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1731050161
@@ -13711,7 +13702,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 30
+  m_text: 50
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
   m_sharedMaterial: {fileID: 7708882091815065706, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
@@ -13801,7 +13792,7 @@ GameObject:
   - component: {fileID: 1774353034}
   - component: {fileID: 1774353033}
   m_Layer: 5
-  m_Name: nivel30
+  m_Name: nivel50
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13880,7 +13871,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: nivel_10
+          m_StringArgument: nivel_50
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1774353034
@@ -13952,6 +13943,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onMenu: 1
   onSettings: 0
+  onVolumeSettings: 0
   isDead: 0
   totalScore: 0
   totalLevelGems: 0
@@ -13959,9 +13951,12 @@ MonoBehaviour:
   lifeText: {fileID: 0}
   gameOver: {fileID: 0}
   ControlsTutorial: {fileID: 0}
+  Statistics: {fileID: 0}
   tileCollider: {fileID: 0}
   tileRender: {fileID: 0}
   exitParticle: {fileID: 0}
+  BG_Map: {fileID: 0}
+  Map: {fileID: 0}
 --- !u!4 &1795075603
 Transform:
   m_ObjectHideFlags: 0
@@ -14034,7 +14029,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 28
+  m_text: 48
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
   m_sharedMaterial: {fileID: 7708882091815065706, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
@@ -14181,7 +14176,7 @@ GameObject:
   - component: {fileID: 1869690690}
   - component: {fileID: 1869690689}
   m_Layer: 5
-  m_Name: nivel23
+  m_Name: nivel43
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14260,7 +14255,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: nivel_3
+          m_StringArgument: nivel_43
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1869690690
@@ -14314,7 +14309,7 @@ GameObject:
   - component: {fileID: 1903552870}
   - component: {fileID: 1903552869}
   m_Layer: 5
-  m_Name: nivel39
+  m_Name: nivel59
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14393,7 +14388,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: nivel_11
+          m_StringArgument: nivel_59
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1903552870
@@ -14447,7 +14442,7 @@ GameObject:
   - component: {fileID: 1910404514}
   - component: {fileID: 1910404513}
   m_Layer: 5
-  m_Name: nivel27
+  m_Name: nivel47
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14526,7 +14521,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: nivel_7
+          m_StringArgument: nivel_47
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1910404514
@@ -14624,7 +14619,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 18
+  m_text: 58
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
   m_sharedMaterial: {fileID: 7708882091815065706, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
@@ -14714,7 +14709,7 @@ GameObject:
   - component: {fileID: 1958309148}
   - component: {fileID: 1958309147}
   m_Layer: 5
-  m_Name: nivel31
+  m_Name: nivel51
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14793,7 +14788,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: nivel_11
+          m_StringArgument: nivel_51
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1958309148
@@ -14891,7 +14886,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 16
+  m_text: 56
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
   m_sharedMaterial: {fileID: 7708882091815065706, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
@@ -15087,7 +15082,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 21
+  m_text: 41
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
   m_sharedMaterial: {fileID: 7708882091815065706, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
@@ -15177,7 +15172,7 @@ GameObject:
   - component: {fileID: 2073177715}
   - component: {fileID: 2073177714}
   m_Layer: 5
-  m_Name: nivel38
+  m_Name: nivel58
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15256,7 +15251,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: nivel_11
+          m_StringArgument: nivel_58
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2073177715
@@ -15354,7 +15349,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 24
+  m_text: 44
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
   m_sharedMaterial: {fileID: 7708882091815065706, guid: a691fb66096c0ad43a00a6e5056de524, type: 2}
@@ -15506,7 +15501,7 @@ GameObject:
   - component: {fileID: 2142699695}
   - component: {fileID: 2142699694}
   m_Layer: 5
-  m_Name: nivel28
+  m_Name: nivel48
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15585,7 +15580,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: nivel_8
+          m_StringArgument: nivel_48
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2142699695
