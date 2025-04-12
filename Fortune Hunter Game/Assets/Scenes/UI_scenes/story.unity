@@ -2667,10 +2667,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ap\xF3s ver toda sua fortuna desaparecer, Augustus decide embarcar em
-    uma jornada determinada para recuperar suas j\xF3ias perdidas. Ao longo de seu
-    caminho ele se depara com uma s\xE9rie de perigos, na cidade, nos esgotos, florestas,
-    templos e at\xE9 no vazio!"
+  m_text: 'After losing his entire fortune, Augustus sets off on a determined journey
+    to reclaim his lost jewels. Along the way, he faces a series of dangers: in the
+    city, the sewers, forests, temples, and even the void!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
