@@ -10056,6 +10056,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onMenu: 1
+  onSettings: 0
+  onVolumeSettings: 0
   isDead: 0
   totalScore: 0
   totalLevelGems: 0
@@ -10063,9 +10065,12 @@ MonoBehaviour:
   lifeText: {fileID: 0}
   gameOver: {fileID: 0}
   ControlsTutorial: {fileID: 0}
+  Statistics: {fileID: 0}
   tileCollider: {fileID: 0}
   tileRender: {fileID: 0}
   exitParticle: {fileID: 0}
+  BG_Map: {fileID: 0}
+  Map: {fileID: 0}
 --- !u!4 &1795075603
 Transform:
   m_ObjectHideFlags: 0
@@ -10247,7 +10252,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 48}
+  m_AnchoredPosition: {x: -7, y: 48}
   m_SizeDelta: {x: 453.962, y: 413.4172}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1916606879
@@ -10270,7 +10275,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Um rato que sempre \xE9 capaz de..."
+  m_text: An agile gray rat, always hungry, and willing to do anything to take a
+    bite out of you!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

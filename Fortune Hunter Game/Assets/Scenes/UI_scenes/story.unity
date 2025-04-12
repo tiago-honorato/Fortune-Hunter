@@ -2524,6 +2524,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onMenu: 1
   onSettings: 0
+  onVolumeSettings: 0
   isDead: 0
   totalScore: 0
   totalLevelGems: 0
@@ -2531,9 +2532,12 @@ MonoBehaviour:
   lifeText: {fileID: 0}
   gameOver: {fileID: 0}
   ControlsTutorial: {fileID: 0}
+  Statistics: {fileID: 0}
   tileCollider: {fileID: 0}
   tileRender: {fileID: 0}
   exitParticle: {fileID: 0}
+  BG_Map: {fileID: 0}
+  Map: {fileID: 0}
 --- !u!4 &1795075603
 Transform:
   m_ObjectHideFlags: 0
@@ -2640,8 +2644,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 46, y: -12}
-  m_SizeDelta: {x: 750, y: 413.4172}
+  m_AnchoredPosition: {x: 55, y: -7}
+  m_SizeDelta: {x: 640.6199, y: 468.1073}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1916606879
 MonoBehaviour:
@@ -2663,15 +2667,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ap\xF3s ver toda a sua fortuna desaparecer, Augustus decide embarcar em
+  m_text: "Ap\xF3s ver toda sua fortuna desaparecer, Augustus decide embarcar em
     uma jornada determinada para recuperar suas j\xF3ias perdidas. Ao longo de seu
-    caminho, ele se depara com uma s\xE9rie de desafios e perigos, desde as ruas
-    ca\xF3ticas das cidades at\xE9 os labirintos escuros dos esgotos, e as profundezas
-    misteriosas das florestas sombrias. Cada lugar guarda obst\xE1culos \xFAnicos,
-    testando n\xE3o apenas sua coragem, mas tamb\xE9m sua perseveran\xE7a. A busca,
-    no entanto, representa muito mais do que a simples recupera\xE7\xE3o de riquezas;
-    para Augustus, \xE9 uma prova de resist\xEAncia e um reencontro da sua pr\xF3pria
-    determina\xE7\xE3o."
+    caminho ele se depara com uma s\xE9rie de perigos, na cidade, nos esgotos, florestas,
+    templos e at\xE9 o vazio!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2680,8 +2679,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278255615
+  m_fontColor: {r: 1, g: 1, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2698,8 +2697,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
