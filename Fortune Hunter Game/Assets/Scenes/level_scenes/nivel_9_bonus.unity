@@ -13082,6 +13082,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onMenu: 0
   onSettings: 0
+  onVolumeSettings: 0
   isDead: 0
   totalScore: 0
   totalLevelGems: 6
@@ -18333,6 +18334,14 @@ PrefabInstance:
     - target: {fileID: 8044839768639015439, guid: ab5e4ec8687f5d340a290515206be283, type: 3}
       propertyPath: m_Name
       value: Chest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316889988951506033, guid: ab5e4ec8687f5d340a290515206be283, type: 3}
+      propertyPath: InitialModule.gravitySource
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8756256997506269139, guid: ab5e4ec8687f5d340a290515206be283, type: 3}
+      propertyPath: InitialModule.gravitySource
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
