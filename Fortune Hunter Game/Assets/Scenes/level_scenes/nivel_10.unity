@@ -7874,7 +7874,7 @@ TilemapCollider2D:
   m_GameObject: {fileID: 83345830}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 508092ddfba0fda4dafaf7851ddb5589, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -10508,7 +10508,7 @@ TilemapCollider2D:
   m_GameObject: {fileID: 872758262}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 508092ddfba0fda4dafaf7851ddb5589, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -21926,7 +21926,7 @@ TilemapCollider2D:
   m_GameObject: {fileID: 1455375987}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 508092ddfba0fda4dafaf7851ddb5589, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -27762,6 +27762,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onMenu: 0
   onSettings: 0
+  onVolumeSettings: 0
   isDead: 0
   totalScore: 0
   totalLevelGems: 1

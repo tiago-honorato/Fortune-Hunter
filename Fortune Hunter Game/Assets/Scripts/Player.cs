@@ -66,8 +66,6 @@ public class Player : MonoBehaviour
                 rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
                 // Ativa a animação de pulo do player.
                 anim.SetBool("jump", true);
-
-                isJumping = true;
                 
                 if (!infiniteJump)
                 {
@@ -81,14 +79,6 @@ public class Player : MonoBehaviour
     }
 
     void OnCollisionEnter2D(Collision2D collision) {
-        
-        if (collision.gameObject.layer == 6)
-        {
-
-            isJumping = false;
-            anim.SetBool("jump", false);
-            
-        }
 
         if (collision.gameObject.tag == "Spike")
         {
@@ -105,15 +95,21 @@ public class Player : MonoBehaviour
 
     }
 
-        void OnCollisionExit2D(Collision2D collision) {
-        
-        if (collision.gameObject.layer == 6)
+    void OnTriggerEnter2D(Collider2D other) {
+
+        if (other.gameObject.layer == 6)
         {
-
-            isJumping = true;
-            
+            isJumping = false;
+            anim.SetBool("jump", false);
         }
+    }
 
+    void OnTriggerExit2D(Collider2D other) {
+        if (other.gameObject.layer == 6)
+        {
+            isJumping = true;
+            anim.SetBool("jump", true);
+        }
     }
 
 }
