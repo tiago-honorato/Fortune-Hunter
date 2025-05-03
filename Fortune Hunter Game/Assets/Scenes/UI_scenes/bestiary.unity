@@ -10191,6 +10191,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onMenu: 1
+  onSettings: 0
+  onVolumeSettings: 0
   isDead: 0
   totalScore: 0
   totalLevelGems: 0
@@ -10198,9 +10200,12 @@ MonoBehaviour:
   lifeText: {fileID: 0}
   gameOver: {fileID: 0}
   ControlsTutorial: {fileID: 0}
+  Statistics: {fileID: 0}
   tileCollider: {fileID: 0}
   tileRender: {fileID: 0}
   exitParticle: {fileID: 0}
+  BG_Map: {fileID: 0}
+  Map: {fileID: 0}
 --- !u!4 &1795075603
 Transform:
   m_ObjectHideFlags: 0
@@ -10490,6 +10495,6 @@ SceneRoots:
   - {fileID: 1795075603}
   - {fileID: 619394802}
   - {fileID: 1163313469}
+  - {fileID: 288874238}
   - {fileID: 57189923}
   - {fileID: 1716995085}
-  - {fileID: 288874238}

@@ -982,11 +982,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1905027852566537102, guid: 234eef2b618cd3d4ab5cb61421a78ce3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.87
+      value: -10.349
       objectReference: {fileID: 0}
     - target: {fileID: 1905027852566537102, guid: 234eef2b618cd3d4ab5cb61421a78ce3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.85
+      value: -5.081
       objectReference: {fileID: 0}
     - target: {fileID: 1905027852566537102, guid: 234eef2b618cd3d4ab5cb61421a78ce3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1603,7 +1603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   caixaPrefab: {fileID: 2026205979}
-  intervalo: 0.3
+  intervalo: 1
   minX: -5
   maxX: 5
 --- !u!1 &1035925285
@@ -1891,7 +1891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   caixaPrefab: {fileID: 2026205979}
-  intervalo: 0.3
+  intervalo: 1
   minX: -5
   maxX: 5
 --- !u!1 &1163313466
@@ -12092,7 +12092,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   caixaPrefab: {fileID: 2026205979}
-  intervalo: 0.3
+  intervalo: 1
   minX: -5
   maxX: 5
 --- !u!4 &1638070763
@@ -18919,14 +18919,14 @@ SceneRoots:
   - {fileID: 1795075603}
   - {fileID: 619394802}
   - {fileID: 1163313469}
+  - {fileID: 1852464450}
+  - {fileID: 2133464354}
   - {fileID: 57189923}
   - {fileID: 1716995085}
   - {fileID: 904473488}
-  - {fileID: 683063435}
-  - {fileID: 844716756}
-  - {fileID: 4769150240930659621}
-  - {fileID: 366331991}
   - {fileID: 1954303591}
-  - {fileID: 1852464450}
-  - {fileID: 2133464354}
   - {fileID: 951368689}
+  - {fileID: 366331991}
+  - {fileID: 4769150240930659621}
+  - {fileID: 844716756}
+  - {fileID: 683063435}

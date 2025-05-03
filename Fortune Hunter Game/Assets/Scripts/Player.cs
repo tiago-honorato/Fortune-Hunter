@@ -92,6 +92,12 @@ public class Player : MonoBehaviour
             GameController.instance.ShowGameOver();
             Destroy(gameObject, 0.3f);
         }
+        if (collision.gameObject.layer == 8)
+        {
+            
+            isJumping = true;
+
+        }
 
     }
 

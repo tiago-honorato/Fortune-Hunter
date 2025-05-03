@@ -63,6 +63,7 @@ public class Enemy : MonoBehaviour
                 circleCollider2D.enabled = false;
                 rig.bodyType = RigidbodyType2D.Kinematic;
                 Destroy(gameObject, 0.33f);
+
             }else{
 
                 playerDestroyed = true;

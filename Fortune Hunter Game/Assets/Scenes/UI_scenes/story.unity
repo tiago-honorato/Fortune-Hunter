@@ -139,6 +139,7 @@ GameObject:
   - component: {fileID: 57189922}
   - component: {fileID: 57189921}
   - component: {fileID: 57189920}
+  - component: {fileID: 57189924}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -233,6 +234,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &57189924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57189919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6bd5cf1dfa83fa4c9438b03efeea02a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  storyTxt: {fileID: 1916606879}
 --- !u!1001 &147126840
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2345,8 +2359,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.0461, y: 55.373234}
-  m_SizeDelta: {x: 1213.053, y: 710.7463}
+  m_AnchoredPosition: {x: 0.006794, y: 0.000041962}
+  m_SizeDelta: {x: 1066.9, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1619982684
 MonoBehaviour:
@@ -2669,7 +2683,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'After losing his entire fortune, Augustus sets off on a determined journey
     to reclaim his lost jewels. Along the way, he faces a series of dangers: in the
-    city, the sewers, forests, temples, and even the void!'
+    city, the sewers, forests, temples, AND EVEN THE VOID!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2878,7 +2892,7 @@ SceneRoots:
   - {fileID: 1795075603}
   - {fileID: 619394802}
   - {fileID: 1163313469}
+  - {fileID: 288874238}
   - {fileID: 57189923}
   - {fileID: 1716995085}
-  - {fileID: 288874238}
   - {fileID: 904473488}
